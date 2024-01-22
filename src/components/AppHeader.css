@@ -17,12 +17,3 @@ header {
 a {
 	text-decoration: none;
 }
-
-.menu-item {
-	color: white;
-	padding: 15px;
-}
-
-.menu-item-selected {
-	font-weight: bold;
-}

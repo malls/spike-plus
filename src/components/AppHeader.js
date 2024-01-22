@@ -1,11 +1,44 @@
+import { NavLink } from "react-router-dom";
 import './AppHeader.css';
+
+function styleFunction ({ isActive, isPending }) {
+	return {
+		color: isActive ? "#B8B8B8" : "inherit",
+		'font-weight': isActive ? "bold" : "inherit",
+		padding: '15px'
+
+	};
+}
+
 function AppHeader () {
 	return (
 		<header>
 			<div className="menu">
-				<a href="/work"><div className="menu-item">Work</div></a>
-				<a href="/about"><div className="menu-item">About</div></a>
-				<a href="/contact"><div className="menu-item">Contact</div></a>
+				<NavLink
+					style={styleFunction}
+					className={( isActive, isPending) => {
+						return isActive ? "active" : isPending ? "pending" : ""
+						
+					}}
+					to="/work">
+					Work
+				</NavLink>
+				<NavLink
+					style={styleFunction}
+					className={( isActive, isPending) => {
+						return isActive ? "active" : isPending ? "pending" : ""
+					}}
+					to="/about">
+					About
+				</NavLink>
+				<NavLink
+					style={styleFunction}
+					className={( isActive, isPending) => {
+						return isActive ? "active" : isPending ? "pending" : ""
+					}}
+					to="/contact">
+					Contact
+				</NavLink>
 			</div>
 		</header>
 	)
