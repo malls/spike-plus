@@ -10,7 +10,9 @@ function App() {
 
             <AppHeader></AppHeader>
             <SiteTitle></SiteTitle>
-            <Outlet />
+            <main className="content">
+                <Outlet/>
+            </main>
             <SiteFooter></SiteFooter>
 
         </div>
