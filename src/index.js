@@ -4,6 +4,7 @@ import App from './App';
 import About from './components/About';
 import Contact from './components/Contact';
 import Work from './components/Work';
+import Home from './components/Home';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -15,6 +16,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      {
+        index: true,
+        loader: async () => {
+          return { data: []}
+          return fetch("/api/home").then((res) => res.json());
+        },
+        element: <Home />,
+      },
       {
         path: "about",
         element: <About />,

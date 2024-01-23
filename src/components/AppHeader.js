@@ -4,7 +4,7 @@ import './AppHeader.css';
 function styleFunction ({ isActive, isPending }) {
 	return {
 		color: isActive ? "#B8B8B8" : "inherit",
-		'font-weight': isActive ? "bold" : "inherit",
+		fontWeight: isActive ? "bold" : "inherit",
 		padding: '15px'
 
 	};
@@ -18,7 +18,6 @@ function AppHeader () {
 					style={styleFunction}
 					className={( isActive, isPending) => {
 						return isActive ? "active" : isPending ? "pending" : ""
-						
 					}}
 					to="/work">
 					Work
