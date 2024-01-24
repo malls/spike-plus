@@ -4,8 +4,7 @@ html, body {
 	margin: 0;
 	height: 100vh;
 	font-family: 'Helvetica Neue', sans-serif;
-	background-color: black;
-	color: white;
+
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;

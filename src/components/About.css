@@ -4,4 +4,28 @@
 	font-weight: 400;
 	font-size: 25px;
 	line-height: 27px;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+.about-label {
+
+}
+
+.about-spacer {
+
+}
+
+.about-text {
+
+}
+
+.about-column-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.about-services {
+
 }
