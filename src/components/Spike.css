@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'HelveticaNeueBold';
-    src: url('../HelveticaNeueBold.woff2') format('woff2');
+    font-family: 'Helvetica Neue Bold';
+    src: url('../HelveticaNeueLTPro-Bd.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -11,12 +11,12 @@
 	width: 734px;
 	height: 305px;
 	left: 51px;
-	top: -44px;
+	top: -30px;
 	
-	font-family: 'HelveticaNeueBold';
+	font-family: 'Helvetica Neue Bold';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 180px;
+	font-size: 200px;
 	line-height: 305px;
 	letter-spacing: -0.06em;
 	color: white;

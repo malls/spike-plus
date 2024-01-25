@@ -1,16 +1,15 @@
 @font-face {
-    font-family: 'HelveticaNeueLight';
-    src: url('HelveticaNeueLight.woff2') format('woff2');
-    font-weight: 300;
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('HelveticaNeueLTPro-Roman.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-
 html, body {
 	margin: 0;
 	height: 100vh;
-	font-family: 'HelveticaNeueLight', 'Heelvetica Neue', sans-serif;
+	font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', 'Helvetica', sans-serif;
 
 	display: flex;
 	min-height: 100vh;
