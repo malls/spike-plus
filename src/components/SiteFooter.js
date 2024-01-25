@@ -21,7 +21,7 @@ function SiteFooter () {
 			</div>
 
 			<div className='footer-row'>
-				<div>© 2024 Spike Plus</div>
+				<div>© 2024 Spike Plus Studio</div>
 				<div className='footer-spacer'></div>
 				<div className='footer-spacer'></div>
 			</div>
