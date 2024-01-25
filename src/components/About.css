@@ -30,13 +30,13 @@ p {
 
 	font-style: normal;
 	font-weight: 400;
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 27px;
 }
 
 .info-column-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	font-size: 14px;
 }
 
