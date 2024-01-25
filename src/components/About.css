@@ -19,7 +19,7 @@ p {
 
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 19px;
 }
 
@@ -37,13 +37,13 @@ p {
 .info-column-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .info-column {
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 23px;
 }
 
@@ -60,7 +60,6 @@ p {
 	.info-column-container {
 		grid-template-columns: 1fr;
 	}
-
 	.info-spacer {
 		display: none;
 	}

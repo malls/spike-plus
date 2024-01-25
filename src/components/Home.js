@@ -15,10 +15,10 @@ export default function Home () {
 
 			<div className="home-container">
 				{data.map((work) => <img src={work.img} alt={work.alt} className='home-image'/>)}
+				<SiteFooter></SiteFooter>
 			</div>
 
 
-			<SiteFooter></SiteFooter>
 		</div>
 	)
 }

@@ -2,7 +2,7 @@ header {
 	display: flex;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 19px;
 	position: fixed;
 	top: 0;
@@ -13,7 +13,7 @@ header {
 	margin-left: 28px;
 	width: 200px;
 	border-bottom: 1px solid black;
-	padding-top: 15px;
+	padding-top: 30px;
 }
 
 .nav-menu {

@@ -4,7 +4,7 @@ import './AppHeader.css';
 function styleFunction ({ isActive, isPending }) {
 	return {
 		color: isActive ? "#B8B8B8" : "inherit",
-		padding: '15px'
+		padding: '30px 15px'
 	};
 }
 
