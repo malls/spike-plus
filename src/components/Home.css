@@ -1,8 +1,12 @@
 .home-container {
 	max-height: calc(100vh - 150px);
+	background-color: black;
+	overflow: auto;
+	padding-bottom: 150px;
 }
 
 .home-image {
+	padding-top: 74px;
 	max-width: 900px;
 	padding-left: 50px;
 	padding-bottom: 10px;
