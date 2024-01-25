@@ -1,13 +1,19 @@
+.home-parent {
+	background-color: black;
+	display: flex;
+}
+
 .home-container {
+	margin-left: 50px;
 	max-height: calc(100vh - 150px);
 	background-color: black;
 	overflow: auto;
 	padding-bottom: 150px;
+	border-bottom: 29px solid white;
+	flex: 1;
 }
 
 .home-image {
-	padding-top: 74px;
 	max-width: 900px;
-	padding-left: 50px;
 	padding-bottom: 10px;
 }

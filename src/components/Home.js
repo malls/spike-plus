@@ -9,7 +9,7 @@ export default function Home () {
 	const { data } = useLoaderData();
 
 	return (
-		<div>
+		<div className='home-parent'>
 			<Spike></Spike>
 
 
