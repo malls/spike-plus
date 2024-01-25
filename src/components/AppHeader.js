@@ -1,22 +1,39 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import './AppHeader.css';
 
 function styleFunction ({ isActive, isPending }) {
 	return {
 		color: isActive ? "#B8B8B8" : "inherit",
-		fontWeight: isActive ? "bold" : "inherit",
 		padding: '15px'
-
 	};
 }
 
 function AppHeader () {
-	return (
-		<header>
-			
-			<NavLink to="/" className={'nav-home'}>Spike Plus</NavLink>
 
-			<div className="menu">
+	let {pathname} = useLocation();
+
+	function blackOrWhite () {
+		if (['/about', '/contact'].includes(pathname)) return 'white-bg';
+		return 'black-bg';
+	}
+
+	function hideOnHome() {
+		if (pathname === '/') return {display: 'none'};
+		return {};
+	
+	}
+
+	return (
+		<header className={blackOrWhite()}>
+
+			<NavLink
+				to="/"
+				style={hideOnHome()}
+				className={'nav-home'}>
+					Spike Plus
+			</NavLink>
+
+			<div className="nav-menu">
 				<NavLink
 					style={styleFunction}
 					className={( isActive, isPending) => {

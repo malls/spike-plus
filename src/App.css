@@ -23,7 +23,7 @@ html, body {
 }
 
 .content {
-	padding-top: 50px;
+	padding-top: 79px;
 	display: flex;
 	flex: 1;
 }
@@ -36,5 +36,4 @@ html, body {
 
 a {
 	text-decoration: none;
-	color: black;
 }
