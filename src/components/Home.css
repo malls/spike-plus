@@ -1,2 +1,10 @@
-.App {
+.home-container {
+	max-height: calc(100vh - 150px);
+	margin-top: 150px;
+}
+
+.home-image {
+	max-width: 900px;
+	padding-left: 50px;
+	padding-bottom: 10px;
 }

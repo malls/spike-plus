@@ -1,4 +1,17 @@
 footer {
 	display: flex;
 	padding: 40px;
+
+	position: fixed;
+	bottom: 0;
+	/* TODO get real number */
+	height: 150px; 
+
+	color: white;
+	background-color: black;
+	width: 100%;
+}
+
+footer a {
+	color: white;
 }

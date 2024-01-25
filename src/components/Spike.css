@@ -7,11 +7,11 @@
 }
 
 .spike {
-	position: absolute;
+	position: fixed;
 	width: 734px;
 	height: 305px;
 	left: 51px;
-	top: 14px;
+	top: -20px;
 	
 	font-family: 'HelveticaNeueBold';
 	font-style: normal;
