@@ -3,12 +3,22 @@ header {
 	font-family: 'Helvetica Neue', sans-serif;
 	display: flex;
 	border-bottom: 1px solid black;
-	margin-left: 10px;
+	margin-left: 28px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+header > span {
+	/* color: white; */
+	width: 200px;
+	padding-top: 15px;
+
 }
 
 .menu {
 	display: flex;
-	flex-direction: row;
 	justify-content: flex-end;
 	width: 100%;
 	padding: 0 20px;

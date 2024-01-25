@@ -12,13 +12,25 @@ p {
 
 
 .info-label {
-	padding: 10px;
+	padding: 28px;
+
+	font-family: 'Helvetica Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
 }
 
 .info-text {
 	border-bottom: 1px solid black;
 	margin-left: 10px;
 	padding: 10px;
+
+	font-family: 'Helvetica Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 27px;
 }
 
 .info-column-container {
@@ -28,8 +40,13 @@ p {
 }
 
 .info-column {
-	/* align-self: start; */
+	font-family: 'Helvetica Neue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
 }
+
 
 .info-spacer {
 	border-bottom: 1px solid black;

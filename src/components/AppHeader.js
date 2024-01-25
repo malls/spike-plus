@@ -13,6 +13,8 @@ function styleFunction ({ isActive, isPending }) {
 function AppHeader () {
 	return (
 		<header>
+			<span>Spike Plus</span>
+
 			<div className="menu">
 				<NavLink
 					style={styleFunction}
