@@ -1,22 +1,27 @@
 header {
 	font-size: 16px;
 	display: flex;
-	border-bottom: 1px solid black;
 	margin-left: 28px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: white;
 }
 
 .nav-home {
 	/* color: white; */
 	width: 200px;
+	border-bottom: 1px solid black;
 	padding-top: 15px;
-
+	
 }
 
 .menu {
+	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
