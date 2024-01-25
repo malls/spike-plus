@@ -76,7 +76,7 @@ const router = createBrowserRouter([
               id: 'fdsasdfafdsaf',
               title: "Title 4",
               photographer: "Photographer Name 4",
-              image: "https://picsum.photos/2800/1800",
+              image: "https://picsum.photos/2801/1800",
             },
             {
               key: 5,

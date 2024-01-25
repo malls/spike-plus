@@ -3,7 +3,6 @@ p {
 }
 
 .info {
-	font-family: 'Helvetica Neue';
 	display: grid;
 	grid-template-columns: 1fr 3fr 1fr;
 	padding-bottom: 20px;
@@ -14,7 +13,6 @@ p {
 .info-label {
 	padding: 28px;
 
-	font-family: 'Helvetica Neue';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -26,7 +24,6 @@ p {
 	margin-left: 10px;
 	padding: 10px;
 
-	font-family: 'Helvetica Neue';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 25px;
@@ -40,7 +37,6 @@ p {
 }
 
 .info-column {
-	font-family: 'Helvetica Neue';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
