@@ -4,7 +4,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	/* TODO get real number */
-	height: 150px;
+	height: 147px;
 
 	color: white;
 	background-color: black;
@@ -23,7 +23,4 @@ footer a {
 	padding: 5px;
 }
 
-.footer-spacer {
-
-}
-
+.footer-spacer {}

@@ -1,14 +1,14 @@
 .home-parent {
 	background-color: black;
 	display: flex;
+	max-height: calc(100vh - 300px);
+	overflow: auto;
 }
 
 .home-container {
-	margin-left: 50px;
-	max-height: calc(100vh - 150px);
+	margin-left: 126px;
 	background-color: black;
 	overflow: auto;
-	padding-bottom: 150px;
 	border-bottom: 29px solid white;
 	flex: 1;
 }
