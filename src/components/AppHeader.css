@@ -2,6 +2,8 @@ header {
 	font-size: 16px;
 	font-family: 'Helvetica Neue', sans-serif;
 	display: flex;
+	border-bottom: 1.5px solid black;
+	margin-left: 10px;
 }
 
 .menu {
