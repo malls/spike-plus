@@ -15,9 +15,9 @@ export default function Contact () {
 				<br/>
 				Dean Snyder
 				<br/>
-				Info@printandcontact.com
+				<a href="mailto:Info@printandcontact.com">Info@printandcontact.com</a>
 				<br/>
-				212 436 8845
+				<a href="tel:+1212-436-8845">212 436 8845</a>
 			</div>
 			<div className='info-spacer'></div>
 		</div>
