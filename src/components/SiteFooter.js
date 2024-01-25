@@ -3,12 +3,33 @@ import './SiteFooter.css'
 function SiteFooter () {
 	return (
 		<footer>
-			<a href='mailto:info@spikeplus.studio'>info@spikeplus.studio</a>
 
-			<span>© 2024 Spike Plus</span>
+			<div className='footer-row'>
+				<a href='mailto:info@spikeplus.studio'><div>info@spikeplus.studio</div></a>
+				<div className='footer-spacer'></div>
+				<a href='https://www.instagram.com/spikeplus.studio/' target='_blank' rel='noreferrer'><div>Instagram</div></a>
+			</div>
+			<div className='footer-row'>
+				<div className='footer-spacer'></div>
+				<div className='footer-spacer'></div>
 
-			<a href='https://www.instagram.com/spikeplus.studio/' target='_blank' rel='noreferrer'>instagram</a>
-			<a href='https://www.linkedin.com/spikeplus.studio/' target='_blank' rel='noreferrer'>LinkedIn</a>
+				<a href='https://www.linkedin.com/spikeplus.studio/' target='_blank' rel='noreferrer'><div>LinkedIn</div></a>
+			</div>
+			<div className='footer-row'>
+				<div className='footer-spacer'></div>
+				<div className='footer-spacer'></div>
+				<div className='footer-spacer'></div>
+			</div>
+
+			<div className='footer-row'>
+				<div>© 2024 Spike Plus</div>
+				<div className='footer-spacer'></div>
+				<div className='footer-spacer'></div>
+			</div>
+
+
+
+
 		</footer>
 	)
 }

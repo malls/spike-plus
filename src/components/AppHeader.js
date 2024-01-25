@@ -13,14 +13,15 @@ function AppHeader () {
 	let {pathname} = useLocation();
 
 	function blackOrWhite () {
-		if (['/about', '/contact'].includes(pathname)) return 'white-bg';
-		return 'black-bg';
+		if (['/about', '/contact'].includes(pathname)) return 'white-bg header-small';
+		if (pathname === '/') return 'black-bg header-big';
+
+		return 'black-bg header-small';
 	}
 
 	function hideOnHome() {
 		if (pathname === '/') return {display: 'none'};
 		return {};
-	
 	}
 
 	return (
