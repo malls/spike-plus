@@ -3,7 +3,6 @@ import './SiteFooter.css'
 function SiteFooter () {
 	return (
 		<footer>
-
 			<div className='footer-row'>
 				<a href='mailto:info@spikeplus.studio'><div>info@spikeplus.studio</div></a>
 				<div className='footer-spacer'></div>
@@ -26,10 +25,6 @@ function SiteFooter () {
 				<div className='footer-spacer'></div>
 				<div className='footer-spacer'></div>
 			</div>
-
-
-
-
 		</footer>
 	)
 }

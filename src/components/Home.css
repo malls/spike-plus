@@ -14,6 +14,20 @@
 }
 
 .home-image {
-	max-width: 900px;
+	width: 900px;
+	max-width: 100%;
 	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+	.home-parent {
+		flex-direction: column;
+	}
+	.home-container {
+		margin-left: 0;
+		border-bottom: none;
+	}
+	.home-image {
+		width: 100%;
+	}
 }
