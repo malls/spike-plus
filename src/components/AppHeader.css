@@ -1,7 +1,6 @@
 header {
 	font-size: 16px;
 	display: flex;
-	margin-left: 28px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -14,6 +13,7 @@ header {
 
 .nav-home {
 	/* color: white; */
+	margin-left: 28px;
 	width: 200px;
 	border-bottom: 1px solid black;
 	padding-top: 15px;
