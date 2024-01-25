@@ -4,6 +4,7 @@
 	grid-template-columns: 1fr 3fr 1fr;
 	padding-bottom: 20px;
 	align-self: start;
+	width: 100%;
 }
 
 .info-label {
