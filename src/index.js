@@ -25,6 +25,10 @@ const router = createBrowserRouter([
             {img: "https://picsum.photos/2700/1201", alt: '', key: 1},
             {img: "https://picsum.photos/2700/1202", alt: '', key: 2},
             {img: "https://picsum.photos/2700/1203", alt: '', key: 3},
+            {img: "https://picsum.photos/2700/1205", alt: '', key: 4},
+            {img: "https://picsum.photos/2700/1207", alt: '', key: 5},
+            {img: "https://picsum.photos/2700/1209", alt: '', key: 6},
+            {img: "https://picsum.photos/2700/1213", alt: '', key: 7},
           ]}
           return fetch("/api/home").then((res) => res.json());
         },
