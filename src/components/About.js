@@ -44,6 +44,7 @@ export default function About () {
 					<br/>
 					OOH and Disruptive Media
 					<br/>
+					<br/>
 				</div>
 				<div className='info-column'>
 					02. Technology
@@ -62,6 +63,7 @@ export default function About () {
 					<br/>
 					e-commerce
 					<br/>
+					<br/>
 				</div>
 				<div className='info-column'>
 					03. Production & Talent
@@ -77,6 +79,7 @@ export default function About () {
 					Brand collaborations
 					<br/>
 					Influencer management
+					<br/>
 					<br/>
 				</div>
 
