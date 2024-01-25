@@ -20,7 +20,6 @@ const router = createBrowserRouter([
       {
         index: true,
         loader: async () => {
-          // scrollable secion hiehg of three images, then show footer
           return { data: [
             {img: "https://picsum.photos/2700/1201", alt: '', key: 1},
             {img: "https://picsum.photos/2700/1202", alt: '', key: 2},
