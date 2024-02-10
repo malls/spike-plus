@@ -63,7 +63,7 @@ const router = createBrowserRouter([
 								id: 'fdsafdsfdsfaaf',
 								title: "Title 1",
 								photographer: "Photographer 1 Name",
-								image: "https://picsum.photos/2700/1200",
+								img: "https://picsum.photos/2700/1200",
 							},
 							{
 								key: 2,
@@ -71,7 +71,7 @@ const router = createBrowserRouter([
 								id: 'fdsafdsdfsafaaf',
 								title: "Title 2",
 								photographer: "Photographer Name 2",
-								image: "https://picsum.photos/1600/800",
+								img: "https://picsum.photos/1600/800",
 							},
 							{
 								key: 3,
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
 								id: 'fdsafdsfdasaf',
 								title: "Title 3",
 								photographer: "Photographer Name 3",
-								image: "https://picsum.photos/2900/1200",
+								img: "https://picsum.photos/2900/1200",
 							},
 							{
 								key: 4,
@@ -87,7 +87,7 @@ const router = createBrowserRouter([
 								id: 'fdsasdfafdsaf',
 								title: "Title 4",
 								photographer: "Photographer Name 4",
-								image: "https://picsum.photos/2801/1800",
+								img: "https://picsum.photos/2801/1800",
 							},
 							{
 								key: 5,
@@ -95,7 +95,7 @@ const router = createBrowserRouter([
 								id: 'fdsafdgf',
 								title: "Title 5",
 								photographer: "Photographer Name 5",
-								image: "https://picsum.photos/2990/1300",
+								img: "https://picsum.photos/2990/1300",
 							}
 						]
 					}
@@ -116,13 +116,13 @@ const router = createBrowserRouter([
 							],
 							description: "Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
 							images: [
-								{ url: "https://picsum.photos/2700/1201", alt: '', key: 1 },
-								{ url: "https://picsum.photos/2700/1202", alt: '', key: 2 },
-								{ url: "https://picsum.photos/2700/1203", alt: '', key: 3 },
-								{ url: "https://picsum.photos/2700/1205", alt: '', key: 4 },
-								{ url: "https://picsum.photos/2700/1207", alt: '', key: 5 },
-								{ url: "https://picsum.photos/2700/1209", alt: '', key: 6 },
-								{ url: "https://picsum.photos/2700/1213", alt: '', key: 7 },
+								{ img: "https://picsum.photos/2700/1201", alt: '', key: 1 },
+								{ img: "https://picsum.photos/2700/1202", alt: '', key: 2 },
+								{ img: "https://picsum.photos/2700/1203", alt: '', key: 3 },
+								{ img: "https://picsum.photos/2700/1205", alt: '', key: 4 },
+								{ img: "https://picsum.photos/2700/1207", alt: '', key: 5 },
+								{ img: "https://picsum.photos/2700/1209", alt: '', key: 6 },
+								{ img: "https://picsum.photos/2700/1213", alt: '', key: 7 },
 							]
 						}
 					}
