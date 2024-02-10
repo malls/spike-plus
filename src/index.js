@@ -106,7 +106,26 @@ const router = createBrowserRouter([
 				path: "work/:id",
 				element: <Work />,
 				loader: async () => {
-					return { data: [] }
+					return { 
+						data: {
+							services: [
+								'service1',
+								'service2',
+								'service3',
+								'service4',
+							],
+							description: "Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+							images: [
+								{ url: "https://picsum.photos/2700/1201", alt: '', key: 1 },
+								{ url: "https://picsum.photos/2700/1202", alt: '', key: 2 },
+								{ url: "https://picsum.photos/2700/1203", alt: '', key: 3 },
+								{ url: "https://picsum.photos/2700/1205", alt: '', key: 4 },
+								{ url: "https://picsum.photos/2700/1207", alt: '', key: 5 },
+								{ url: "https://picsum.photos/2700/1209", alt: '', key: 6 },
+								{ url: "https://picsum.photos/2700/1213", alt: '', key: 7 },
+							]
+						}
+					}
 					return fetch("/api/work/:id").then((res) => res.json());
 				},
 			},

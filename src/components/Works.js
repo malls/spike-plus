@@ -1,6 +1,7 @@
 import './Works.css';
 import Hero from './Hero.js';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
+
 
 export default function Works () { 
 
@@ -8,7 +9,7 @@ export default function Works () {
 
 	return (
 		<div className="work-container">
-			{data.map((work) => <Hero heroData={work}></Hero>)}
+			{data.map((work) => <Link to={`/work/${work.id}`}><Hero heroData={work}></Hero></Link>)}
 		</div>
 	)
 }
