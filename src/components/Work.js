@@ -7,10 +7,10 @@ export default function Work () {
 	const { data } = useLoaderData();
 
 	const heroData1 = {
-		image: data.images[0].img
+		img: data.images[0].img
 	};
 	const heroData2 = {
-		image: data.images[1].img
+		img: data.images[1].img
 	};
 
 	  return (
@@ -20,7 +20,7 @@ export default function Work () {
 				Description: {data.description}
 				Services: {data.services.map((service) => <div>{service}</div>)}
 			</div>
-			<Hero heroData={heroData1}></Hero>
+			<Hero heroData={heroData2}></Hero>
 			<div className="work-images-container">
 				{data.images.slice(2).map((image) => <img src={image.img} alt={image.alt} key={image.key}></img>)}
 			</div>
