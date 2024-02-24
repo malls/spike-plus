@@ -22,41 +22,6 @@ const router = createBrowserRouter([
 				loader: async () => {
 					return {
 						data: [
-							{ img: "https://picsum.photos/2700/1201", alt: '', key: 1 },
-							{ img: "https://picsum.photos/2700/1202", alt: '', key: 2 },
-							{ img: "https://picsum.photos/2700/1203", alt: '', key: 3 },
-							{ img: "https://picsum.photos/2700/1205", alt: '', key: 4 },
-							{ img: "https://picsum.photos/2700/1207", alt: '', key: 5 },
-							{ img: "https://picsum.photos/2700/1209", alt: '', key: 6 },
-							{ img: "https://picsum.photos/2700/1213", alt: '', key: 7 },
-						]
-					}
-					return fetch("/api/home").then((res) => res.json());
-				},
-				element: <Home />,
-			},
-			{
-				path: "about",
-				element: <About />,
-				loader: async () => {
-					return { data: [] }
-					return fetch("/api/about").then((res) => res.json());
-				},
-			},
-			{
-				path: "contact",
-				element: <Contact />,
-				loader: async () => {
-					return { data: [] }
-					return fetch("/api/contact").then((res) => res.json());
-				},
-			},
-			{
-				path: "work",
-				element: <Works />,
-				loader: async () => {
-					return {
-						data: [
 							{
 								key: 1,
 								client: "Client Name 1",
@@ -99,7 +64,24 @@ const router = createBrowserRouter([
 							}
 						]
 					}
-					return fetch("/api/work").then((res) => res.json());
+					return fetch("/api/home").then((res) => res.json());
+				},
+				element: <Home />,
+			},
+			{
+				path: "about",
+				element: <About />,
+				loader: async () => {
+					return { data: [] }
+					return fetch("/api/about").then((res) => res.json());
+				},
+			},
+			{
+				path: "contact",
+				element: <Contact />,
+				loader: async () => {
+					return { data: [] }
+					return fetch("/api/contact").then((res) => res.json());
 				},
 			},
 			{

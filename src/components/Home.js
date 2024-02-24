@@ -1,8 +1,7 @@
 import SiteFooter from './SiteFooter.js';
 import Spike from './Spike.js';
 import './Home.css';
-import { useLoaderData } from 'react-router-dom';
-
+import { Link, useLoaderData } from 'react-router-dom';
 
 export default function Home () { 
 
@@ -14,7 +13,7 @@ export default function Home () {
 
 
 			<div className="home-container">
-				{data.map((work) => <img src={work.img} alt={work.alt} className='home-image'/>)}
+				{data.map((work) => <Link to={`/work/${work.id}`}><img src={work.img} alt={work.alt} className='home-image'/></Link>)}
 			</div>
 			<SiteFooter></SiteFooter>
 

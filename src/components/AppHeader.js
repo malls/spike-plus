@@ -40,7 +40,7 @@ function AppHeader () {
 					className={( isActive, isPending) => {
 						return isActive ? "active" : isPending ? "pending" : ""
 					}}
-					to="/work">
+					to="/">
 					Work
 				</NavLink>
 				<NavLink
