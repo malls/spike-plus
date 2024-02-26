@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import About from './components/About';
 import Contact from './components/Contact';
-import Works from './components/Works';
 import Work from './components/Work';
 import Home from './components/Home';
 import reportWebVitals from './reportWebVitals';
