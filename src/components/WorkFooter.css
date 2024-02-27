@@ -1,0 +1,8 @@
+.work-footer {
+	background-color: black;
+	color: white;
+	height: 79px;
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+}

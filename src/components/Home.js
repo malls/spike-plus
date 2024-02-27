@@ -11,12 +11,10 @@ export default function Home () {
 		<div className='home-parent'>
 			<Spike></Spike>
 
-
 			<div className="home-container">
-				{data.map((work) => <Link to={`/work/${work.id}`}><img src={work.img} alt={work.alt} className='home-image'/></Link>)}
+				{data.map((work) => <Link to={`/work/${work.id}`} key={work.id}><img src={work.img} alt={work.alt} className='home-image'/></Link>)}
 			</div>
 			<SiteFooter></SiteFooter>
-
 
 		</div>
 	)

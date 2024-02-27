@@ -22,41 +22,36 @@ const router = createBrowserRouter([
 					return {
 						data: [
 							{
-								key: 1,
 								client: "Client Name 1",
-								id: 'fdsafdsfdsfaaf',
+								id: 1,
 								title: "Title 1",
 								photographer: "Photographer 1 Name",
 								img: "https://picsum.photos/2700/1200",
 							},
 							{
-								key: 2,
 								client: "Client Name 2",
-								id: 'fdsafdsdfsafaaf',
+								id: 2,
 								title: "Title 2",
 								photographer: "Photographer Name 2",
 								img: "https://picsum.photos/1600/800",
 							},
 							{
-								key: 3,
 								client: "Client Name 3",
-								id: 'fdsafdsfdasaf',
+								id: 3,
 								title: "Title 3",
 								photographer: "Photographer Name 3",
 								img: "https://picsum.photos/2900/1200",
 							},
 							{
-								key: 4,
 								client: "Client Name 4",
-								id: 'fdsasdfafdsaf',
+								id: 4,
 								title: "Title 4",
 								photographer: "Photographer Name 4",
 								img: "https://picsum.photos/2801/1800",
 							},
 							{
-								key: 5,
 								client: "Client Name 5",
-								id: 'fdsafdgf',
+								id: 5,
 								title: "Title 5",
 								photographer: "Photographer Name 5",
 								img: "https://picsum.photos/2990/1300",
@@ -86,24 +81,26 @@ const router = createBrowserRouter([
 			{
 				path: "work/:id",
 				element: <Work />,
-				loader: async () => {
+				loader: async ({params}) => {
 					return { 
 						data: {
+							id: params.id,
 							services: [
 								'service1',
 								'service2',
 								'service3',
 								'service4',
 							],
+							title: "Project title",
 							description: "Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
 							images: [
-								{ img: "https://picsum.photos/2700/1201", alt: '', key: 1 },
-								{ img: "https://picsum.photos/2700/1202", alt: '', key: 2 },
-								{ img: "https://picsum.photos/2700/1203", alt: '', key: 3 },
-								{ img: "https://picsum.photos/2700/1205", alt: '', key: 4 },
-								{ img: "https://picsum.photos/2700/1207", alt: '', key: 5 },
-								{ img: "https://picsum.photos/2700/1209", alt: '', key: 6 },
-								{ img: "https://picsum.photos/2700/1213", alt: '', key: 7 },
+								{ img: "https://picsum.photos/2700/1201", alt: ''},
+								{ img: "https://picsum.photos/2700/1202", alt: ''},
+								{ img: "https://picsum.photos/2700/1203", alt: ''},
+								{ img: "https://picsum.photos/2700/1205", alt: ''},
+								{ img: "https://picsum.photos/2700/1207", alt: ''},
+								{ img: "https://picsum.photos/2700/1209", alt: ''},
+								{ img: "https://picsum.photos/2700/1213", alt: ''},
 							]
 						}
 					}
