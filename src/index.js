@@ -82,6 +82,8 @@ const router = createBrowserRouter([
 				path: "work/:id",
 				element: <Work />,
 				loader: async ({params}) => {
+					window.scrollTo(0, 0);
+
 					return { 
 						data: {
 							id: params.id,
@@ -93,14 +95,15 @@ const router = createBrowserRouter([
 							],
 							title: "Project title",
 							description: "Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
-							images: [
-								{ img: "https://picsum.photos/2700/1201", alt: ''},
-								{ img: "https://picsum.photos/2700/1202", alt: ''},
-								{ img: "https://picsum.photos/2700/1203", alt: ''},
-								{ img: "https://picsum.photos/2700/1205", alt: ''},
-								{ img: "https://picsum.photos/2700/1207", alt: ''},
-								{ img: "https://picsum.photos/2700/1209", alt: ''},
-								{ img: "https://picsum.photos/2700/1213", alt: ''},
+							content: [
+								{ url: 'http://localhost:8000/IMG_7304.mov', alt: '', type: 'video'},
+								{ url: "https://picsum.photos/2700/1201", alt: '', type: 'image'},
+								{ url: "https://picsum.photos/2700/1202", alt: '', type: 'image'},
+								{ url: "https://picsum.photos/2700/1203", alt: '', type: 'image'},
+								{ url: "https://picsum.photos/2700/1205", alt: '', type: 'image'},
+								{ url: "https://picsum.photos/2700/1207", alt: '', type: 'image'},
+								{ url: "https://picsum.photos/2700/1209", alt: '', type: 'image'},
+								{ url: "https://picsum.photos/2700/1213", alt: '', type: 'image'},
 							]
 						}
 					}

@@ -3,7 +3,10 @@
 	width: 100%;
 	color: white;
 	display: flex;
-	height: 70vh;
+}
+
+.hero-image, .hero-video {
+	width: 100%;
 }
 
 .hero-caption {
