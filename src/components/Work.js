@@ -9,21 +9,15 @@ export default function Work () {
 	const heroData1 = {
 		img: data.images[0].img
 	};
-	const heroData2 = {
-		img: data.images[1].img
-	};
 
-	  return (
-		<div>
+	return (
+		<div className="work-container">
 			<Hero heroData={heroData1}></Hero>
 			<div className="work-text-container">
 				Description: {data.description}
 				Services: {data.services.map((service) => <div>{service}</div>)}
 			</div>
-			<Hero heroData={heroData2}></Hero>
-			<div className="work-images-container">
-				{data.images.slice(2).map((image) => <img src={image.img} alt={image.alt} key={image.key}></img>)}
-			</div>
+			{data.images.slice(1).map((image) => <Hero heroData={image}></Hero>)}
 		</div>
   )
 }

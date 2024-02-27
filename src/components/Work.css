@@ -1,11 +1,11 @@
+.work-container {
+	width: 100%;
+}
+
 .work-images-container {
 	width: 100%;
 	display: flex;
 	overflow: auto;
 	flex-direction: row;
 	flex-wrap: wrap;
-}
-
-.work-images-container img {
-	max-width: 50%;
 }
