@@ -19,7 +19,9 @@ export default function Work () {
 					{data.services.map((service) => <div key={service}>{service}</div>)}
 				</div>
 			</div>
-			{data.content.slice(1).map((image) => <Hero heroData={image} key={image.url}></Hero>)}
+			<div className="work-work-container">
+				{data.content.slice(1).map((image) => <Hero heroData={image} key={image.url}></Hero>)}
+			</div>
 			<WorkFooter></WorkFooter>
 		</div>
   )

@@ -19,6 +19,8 @@ const router = createBrowserRouter([
 			{
 				index: true,
 				loader: async () => {
+					window.scrollTo(0, 0);
+
 					return {
 						data: [
 							{
@@ -66,6 +68,8 @@ const router = createBrowserRouter([
 				path: "about",
 				element: <About />,
 				loader: async () => {
+					window.scrollTo(0, 0);
+
 					return { data: [] }
 					return fetch("/api/about").then((res) => res.json());
 				},
@@ -74,6 +78,8 @@ const router = createBrowserRouter([
 				path: "contact",
 				element: <Contact />,
 				loader: async () => {
+					window.scrollTo(0, 0);
+
 					return { data: [] }
 					return fetch("/api/contact").then((res) => res.json());
 				},
