@@ -7,12 +7,19 @@
 	grid-template-columns: 1fr 2fr 1fr;
 	grid-gap: 50px;
 	border-bottom: 1px solid black;
-	margin-left: 100px;
 	padding-bottom: 30px;
 	border-top: 29px solid black;
 	padding-top: 30px;
+	margin-left: 30px;
 }
 
 .work-work-container .hero-container {
 	padding-top: 30px;
+}
+
+
+@media screen and (min-width: 600px){
+	.work-text-container {
+		margin-left: 100px;
+	}
 }
