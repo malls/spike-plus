@@ -12,7 +12,21 @@ export default function Home () {
 			<Spike></Spike>
 
 			<div className="home-container">
-				{data.map((work) => <Link to={`/work/${work.id}`} key={work.id}><img src={work.img} alt={work.alt} className='home-image'/></Link>)}
+				{
+					data.map((work) => {
+						console.log(work);
+						if (data.type === 'video') {
+							return <Link to={`/work/${work.id}`} key={work.id}>
+									<video autoPlay loop muted playsInline className="home-video">
+									<source src={work.url} type="video/mp4"/>
+								</video>
+							</Link>
+						} else {
+							return <Link to={`/work/${work.id}`} key={work.id}><img src={work.url} alt={work.alt} className='home-image'/></Link>
+						}
+
+					})
+				}
 			</div>
 			<SiteFooter></SiteFooter>
 
