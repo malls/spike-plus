@@ -28,7 +28,7 @@ const router = createBrowserRouter([
 								id: 1,
 								title: "Title 1",
 								photographer: "Photographer 1 Name",
-								type: "image",
+								mediaType: "image",
 								url: "https://picsum.photos/2700/1200",
 							},
 							{
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
 								id: 2,
 								title: "Title 2",
 								photographer: "Photographer Name 2",
-								type: "image",
+								mediaType: "image",
 								url: "https://picsum.photos/1600/800",
 							},
 							{
@@ -44,15 +44,15 @@ const router = createBrowserRouter([
 								id: 3,
 								title: "Title 3",
 								photographer: "Photographer Name 3",
-								type: "image",
-								url: "https://picsum.photos/2900/1200",
+								mediaType: "video",
+								url: "http://localhost:8000/Mountain%20Isolation/DSCF6963.MOV",
 							},
 							{
 								client: "Client Name 4",
 								id: 4,
 								title: "Title 4",
 								photographer: "Photographer Name 4",
-								type: "image",
+								mediaType: "image",
 								url: "https://picsum.photos/2801/1800",
 							},
 							{
@@ -60,7 +60,7 @@ const router = createBrowserRouter([
 								id: 5,
 								title: "Title 5",
 								photographer: "Photographer Name 5",
-								type: "image",
+								mediaType: "image",
 								url: "https://picsum.photos/2990/1300",
 							}
 						]
