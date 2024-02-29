@@ -11,6 +11,16 @@ import {
 	RouterProvider,
 } from "react-router-dom";
 
+
+
+
+
+//https://www.contentful.com/developers/docs/references/graphql/#/introduction/http-methods
+function generateApiUrl (query) {
+	return `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE_ID}/environments/master?query=${query}`;
+}
+
+
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -23,6 +33,15 @@ const router = createBrowserRouter([
 
 					return {
 						data: [
+							{
+								client: 'Forrest',
+								id: 0,
+								title: "Title 0",
+								photographer: "Photographer 0 Name",
+								mediaType: "video",
+								url: '/DSCF6975.MOV'
+							},
+
 							{
 								client: "Client Name 1",
 								id: 1,
@@ -45,7 +64,7 @@ const router = createBrowserRouter([
 								title: "Title 3",
 								photographer: "Photographer Name 3",
 								mediaType: "video",
-								url: "http://localhost:8000/Mountain%20Isolation/DSCF6963.MOV",
+								url: "/DSCF6962.MOV",
 							},
 							{
 								client: "Client Name 4",
@@ -65,7 +84,22 @@ const router = createBrowserRouter([
 							}
 						]
 					}
-					return fetch("/api/home").then((res) => res.json());
+					return fetch(generateApiUrl("home"), {
+						method: 'POST',
+						headers: {
+							contentType: 'application/json',
+						},
+						body: JSON.stringify({
+							query: `{
+							  characters {
+								results {
+								  name
+								}
+							  }
+							}`
+						  })
+
+					}).then((res) => res.json());
 				},
 				element: <Home />,
 			},
@@ -76,7 +110,10 @@ const router = createBrowserRouter([
 					window.scrollTo(0, 0);
 
 					return { data: [] }
-					return fetch("/api/about").then((res) => res.json());
+					return fetch(generateApiUrl("about", {
+						method: 'POST',
+
+					})).then((res) => res.json());
 				},
 			},
 			{
@@ -86,7 +123,10 @@ const router = createBrowserRouter([
 					window.scrollTo(0, 0);
 
 					return { data: [] }
-					return fetch("/api/contact").then((res) => res.json());
+					return fetch(generateApiUrl("contact"), {
+						method: 'POST',
+
+					}).then((res) => res.json());
 				},
 			},
 			{
@@ -118,7 +158,9 @@ const router = createBrowserRouter([
 							]
 						}
 					}
-					return fetch("/api/work/:id").then((res) => res.json());
+					return fetch(generateApiUrl("work"), {
+						method: 'POST',
+					}).then((res) => res.json());
 				},
 			},
 		],
