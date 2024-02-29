@@ -27,8 +27,8 @@
 		font-size: 100px;
 		width: 367px;
 		top: -29px;
+		left: 10px
 	}
-
 }
 
 
@@ -37,5 +37,6 @@
 		font-size: 130px;
 		width: 500px;
 		top: -29px;
+		left: 20px;
 	}
 }
