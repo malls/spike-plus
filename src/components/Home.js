@@ -5,15 +5,17 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function Home () { 
+	const { data } = useLoaderData();
 
+	console.log(data)
 	const [media,setMedia] = useState([]);
 
-	const { data } = useLoaderData();
 
 	let temlatedData = [templateNext()];
 
 	function templateNext() {
 		const nextItem = data.shift();
+		console.log(nextItem)
 		if (!nextItem) return;
 
 		if (nextItem.mediaType === 'video') {
@@ -29,6 +31,7 @@ export default function Home () {
 		}
 	}
 
+	console.log(temlatedData)
 
 	function loadNext() {
 		if (data.length === 0) return;
