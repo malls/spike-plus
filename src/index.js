@@ -155,6 +155,7 @@ const router = createBrowserRouter([
 							description: "Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
 							content: [
 								{ url: '/DSCF6975.MOV', alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'video'},
+								{ url: "https://picsum.photos/3200/800", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
 								{ url: "https://picsum.photos/2700/1201", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
 								{ url: "https://picsum.photos/2700/1202", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
 								{ url: "https://picsum.photos/2700/1203", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
