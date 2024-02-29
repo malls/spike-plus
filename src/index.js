@@ -39,16 +39,15 @@ const router = createBrowserRouter([
 								title: "Title 0",
 								photographer: "Photographer 0 Name",
 								mediaType: "video",
-								url: '/DSCF6975.MOV'
+								url: '/ella goerner meditation on the economy one.mp4'
 							},
-
 							{
-								client: "Client Name 1",
+								client: 'Forrest',
 								id: 1,
 								title: "Title 1",
 								photographer: "Photographer 1 Name",
-								mediaType: "image",
-								url: "https://picsum.photos/2700/1200",
+								mediaType: "video",
+								url: '/DSCF6975.MOV'
 							},
 							{
 								client: "Client Name 2",
@@ -81,7 +80,15 @@ const router = createBrowserRouter([
 								photographer: "Photographer Name 5",
 								mediaType: "image",
 								url: "https://picsum.photos/2990/1300",
-							}
+							},
+							{
+								client: "Client Name 1",
+								id: 6,
+								title: "Title 1",
+								photographer: "Photographer 1 Name",
+								mediaType: "image",
+								url: "https://picsum.photos/2700/1200",
+							},
 						]
 					}
 					return fetch(generateApiUrl("home"), {
