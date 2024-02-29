@@ -154,14 +154,15 @@ const router = createBrowserRouter([
 							title: "Project title",
 							description: "Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
 							content: [
-								{ url: 'http://localhost:8000/IMG_7304.mov', alt: '', type: 'video'},
-								{ url: "https://picsum.photos/2700/1201", alt: '', type: 'image'},
-								{ url: "https://picsum.photos/2700/1202", alt: '', type: 'image'},
-								{ url: "https://picsum.photos/2700/1203", alt: '', type: 'image'},
-								{ url: "https://picsum.photos/2700/1205", alt: '', type: 'image'},
-								{ url: "https://picsum.photos/2700/1207", alt: '', type: 'image'},
-								{ url: "https://picsum.photos/2700/1209", alt: '', type: 'image'},
-								{ url: "https://picsum.photos/2700/1213", alt: '', type: 'image'},
+								{ url: '/DSCF6975.MOV', alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'video'},
+								{ url: "https://picsum.photos/2700/1201", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
+								{ url: "https://picsum.photos/2700/1202", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
+								{ url: "https://picsum.photos/2700/1203", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
+								{ url: "/ella goerner meditation on the economy one.mp4", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'video'},
+								{ url: "https://picsum.photos/2700/1205", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
+								{ url: "https://picsum.photos/2700/1207", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
+								{ url: "https://picsum.photos/2700/1209", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
+								{ url: "https://picsum.photos/2700/1213", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
 							]
 						}
 					}
