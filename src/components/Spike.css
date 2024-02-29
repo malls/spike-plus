@@ -9,7 +9,7 @@
 .spike {
 	position: fixed;
 	width: 734px;
-	height: 305px;
+	/* height: 305px; */
 	left: 51px;
 	top: -30px;
 	
@@ -22,3 +22,21 @@
 	color: white;
 }
 
+@media screen and (max-width: 600px) {
+	.spike {
+		font-size: 100px;
+		width: 367px;
+		top: -29px;
+		left: 10px
+	}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+	.spike {
+		font-size: 130px;
+		width: 500px;
+		top: -29px;
+		left: 20px;
+	}
+}
