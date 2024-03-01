@@ -2,16 +2,23 @@ import SiteFooter from './SiteFooter.js';
 import Spike from './Spike.js';
 import './Home.css';
 import { Link, useLoaderData } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export default function Home () {
 	const { data } = useLoaderData();
 
-	let [media, setMedia] = useState(<div></div>);
+	let [media, setMedia] = useState([]);
+	let [index, setIndex] = useState(0);
 
-	function templateAll() {
-		setMedia(data.map((item, i) =>  i ? templateData(item) : ''));
-	}
+	const templateNext = useCallback(() => {
+		if (!data[index]) return;
+		setIndex(index + 1);
+		setMedia(prevMedia => [...prevMedia, templateData(data[index]), templateNext]);
+	}, [data, index]);
+
+	useEffect(() => {
+		templateNext();
+	}, [templateNext]);
 
 	function templateData(nextItem, cb) {
 		if (!nextItem) return;
@@ -36,9 +43,6 @@ export default function Home () {
 			<Spike></Spike>
 
 			<div className="home-container">
-				{
-					templateData(data[0], templateAll)
-				}
 				{
 					media
 				}
