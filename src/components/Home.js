@@ -4,38 +4,31 @@ import './Home.css';
 import { Link, useLoaderData } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Home () { 
+export default function Home () {
 	const { data } = useLoaderData();
 
-	console.log(data)
-	const [media,setMedia] = useState([]);
+	let [media, setMedia] = useState(<div></div>);
 
+	function templateAll() {
+		setMedia(data.map((item, i) =>  i ? templateData(item) : ''));
+	}
 
-	let temlatedData = [templateNext()];
-
-	function templateNext() {
-		const nextItem = data.shift();
-		console.log(nextItem)
+	function templateData(nextItem, cb) {
 		if (!nextItem) return;
 
 		if (nextItem.mediaType === 'video') {
 			return (
 				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
-					<video autoPlay loop muted playsInline className="home-media" onLoadedData={loadNext}>
+					<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
 							<source src={nextItem.url}/>
 					</video>
 				</Link>
 			);
 		} else {
-			return <Link to={`/nextItem/${nextItem.id}`} key={nextItem.id}><img src={nextItem.url} alt={nextItem.alt} className='home-media' onLoad={loadNext}/></Link>;
+			return <Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+					<img src={nextItem.url} alt={nextItem.alt} className='home-media' onLoad={cb}/>
+				</Link>;
 		}
-	}
-
-	console.log(temlatedData)
-
-	function loadNext() {
-		if (data.length === 0) return;
-		setMedia([...media, templateNext()]);
 	}
 
 	return (
@@ -44,7 +37,10 @@ export default function Home () {
 
 			<div className="home-container">
 				{
-					temlatedData.map((item) => item)
+					templateData(data[0], templateAll)
+				}
+				{
+					media
 				}
 			</div>
 			<SiteFooter></SiteFooter>
