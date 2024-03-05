@@ -1,3 +1,24 @@
+@media screen and (max-width: 600px) {
+	.menu {
+		display: contents;
+		z-index: 100;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: white;
+		color: black;
+
+	}
+
+	.menu-top {
+		margin-left: 10px;
+		border-bottom: 1px solid black;
+	}
+}
+
+
 header {
 	display: flex;
 	font-style: normal;
