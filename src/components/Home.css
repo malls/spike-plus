@@ -10,6 +10,7 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	height: 900px;
+	width: 100%;
 }
 
 .home-media {

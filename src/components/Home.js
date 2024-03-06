@@ -25,16 +25,28 @@ export default function Home () {
 
 		if (nextItem.mediaType === 'video') {
 			return (
-				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
-					<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
-							<source src={nextItem.url}/>
-					</video>
-				</Link>
+				<div className='home-media-container'>
+					<span className='home-media-client'>
+						{nextItem.client}
+					</span>
+					<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+						<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
+								<source src={nextItem.url}/>
+						</video>
+					</Link>
+				</div>
 			);
 		} else {
-			return <Link to={`/work/${nextItem.id}`} key={nextItem.id}>
-					<img src={nextItem.url} alt={nextItem.alt} className='home-media' onLoad={cb}/>
-				</Link>;
+			return (
+				<div className='home-media-container'>
+					<span className='home-media-client'>
+						{nextItem.client}
+					</span>
+					<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+						<img src={nextItem.url} alt={nextItem.alt} className='home-media' onLoad={cb}/>
+					</Link>;
+				</div>
+			);
 		}
 	}
 

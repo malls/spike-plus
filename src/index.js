@@ -12,9 +12,6 @@ import {
 } from "react-router-dom";
 
 
-
-
-
 //https://www.contentful.com/developers/docs/references/graphql/#/introduction/http-methods
 function generateApiUrl (query) {
 	return `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE_ID}/environments/master?query=${query}`;
@@ -34,36 +31,12 @@ const router = createBrowserRouter([
 					return {
 						data: [
 							{
-								client: 'Forrest',
-								id: 0,
-								title: "Title 0",
-								photographer: "Photographer 0 Name",
-								mediaType: "video",
-								url: '/ella goerner meditation on the economy one.mp4'
-							},
-							{
-								client: 'Forrest',
-								id: 1,
-								title: "Title 1",
-								photographer: "Photographer 1 Name",
-								mediaType: "video",
-								url: '/DSCF6975.MOV'
-							},
-							{
 								client: "Client Name 2",
 								id: 2,
 								title: "Title 2",
 								photographer: "Photographer Name 2",
 								mediaType: "image",
 								url: "https://picsum.photos/1600/800",
-							},
-							{
-								client: "Client Name 3",
-								id: 3,
-								title: "Title 3",
-								photographer: "Photographer Name 3",
-								mediaType: "video",
-								url: "/DSCF6962.MOV",
 							},
 							{
 								client: "Client Name 4",
@@ -88,6 +61,30 @@ const router = createBrowserRouter([
 								photographer: "Photographer 1 Name",
 								mediaType: "image",
 								url: "https://picsum.photos/2700/1200",
+							},
+							{
+								client: 'Forrest',
+								id: 0,
+								title: "Title 0",
+								photographer: "Photographer 0 Name",
+								mediaType: "video",
+								url: '/ella goerner meditation on the economy one.mp4'
+							},
+							{
+								client: "Client Name 3",
+								id: 3,
+								title: "Title 3",
+								photographer: "Photographer Name 3",
+								mediaType: "video",
+								url: "/DSCF6962.MOV",
+							},
+							{
+								client: 'Forrest',
+								id: 1,
+								title: "Title 1",
+								photographer: "Photographer 1 Name",
+								mediaType: "video",
+								url: '/DSCF6975.MOV'
 							},
 						]
 					}

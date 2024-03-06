@@ -10,7 +10,7 @@ html, body {
 	margin: 0;
 	height: 100vh;
 	font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', 'Helvetica', sans-serif;
-
+	background-color: black;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
