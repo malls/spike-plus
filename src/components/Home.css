@@ -17,6 +17,24 @@
 	width: 95%;
 	max-width: 100%;
 	padding-bottom: 10px;
+	/* position: relative; */
+}
+
+.home-media-container {
+	position: relative;
+	height: 100%;
+	/* margin: -50%; */
+}
+
+
+.home-media-client {
+	position: -webkit-sticky; 
+	position: sticky;
+	color: white;
+	inset-block: 50% 50px;
+	padding-bottom: 30px;
+	display: inline-block;
+	height: 50%;
 }
 
 @media screen and (max-width: 900px) {

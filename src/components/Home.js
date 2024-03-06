@@ -25,27 +25,27 @@ export default function Home () {
 
 		if (nextItem.mediaType === 'video') {
 			return (
-				<div className='home-media-container'>
-					<span className='home-media-client'>
-						{nextItem.client}
-					</span>
-					<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
-						<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
-								<source src={nextItem.url}/>
-						</video>
-					</Link>
-				</div>
+				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+					<div className='home-media-container'>
+						<div className='home-media-client'>
+							{nextItem.client}
+						</div>
+							<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
+									<source src={nextItem.url}/>
+							</video>
+					</div>
+				</Link>
 			);
 		} else {
 			return (
-				<div className='home-media-container'>
-					<span className='home-media-client'>
-						{nextItem.client}
-					</span>
-					<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+					<div className='home-media-container'>
+						<div className='home-media-client'>
+							{nextItem.client}
+						</div>
 						<img src={nextItem.url} alt={nextItem.alt} className='home-media' onLoad={cb}/>
-					</Link>;
-				</div>
+					</div>
+				</Link>
 			);
 		}
 	}
