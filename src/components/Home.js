@@ -30,9 +30,9 @@ export default function Home () {
 						<div className='home-media-client'>
 							{nextItem.client}
 						</div>
-							<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
-									<source src={nextItem.url}/>
-							</video>
+						<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
+								<source src={nextItem.url}/>
+						</video>
 					</div>
 				</Link>
 			);

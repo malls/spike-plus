@@ -2,6 +2,7 @@
 	background-color: black;
 	overflow-y: auto;
 	overflow-x: hidden;
+	border: 1px dotted red;
 }
 
 .home-container {
@@ -9,21 +10,23 @@
 	background-color: black;
 	overflow-x: hidden;
 	overflow-y: auto;
-	height: 900px;
+	height: 100vh;
 	width: 100%;
+	border: 1px dotted blue;
+	position: relative;
+}
+
+.home-media-container {
+	position: relative;
+	border: 1px dotted green;
+
 }
 
 .home-media {
 	width: 95%;
 	max-width: 100%;
-	padding-bottom: 10px;
-	/* position: relative; */
-}
-
-.home-media-container {
-	position: relative;
-	height: 100%;
-	/* margin: -50%; */
+	border: 1px dotted yellow;
+	display: inline-block;
 }
 
 
@@ -34,7 +37,7 @@
 	inset-block: 50% 50px;
 	padding-bottom: 30px;
 	display: inline-block;
-	height: 50%;
+	border: 1px dotted purple;
 }
 
 @media screen and (max-width: 900px) {
