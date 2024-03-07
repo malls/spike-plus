@@ -11,7 +11,7 @@ export default function Work () {
 		<div className="work-container">
 			<Hero heroData={data.content[0]}></Hero>
 			<div className="work-text-container">
-				<div>Project Description</div>
+				<div>{data.client}</div>
 				<div>{data.description}</div>
 				<div>
 					Services

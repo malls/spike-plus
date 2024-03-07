@@ -2,7 +2,7 @@
 	background-color: black;
 	overflow-y: auto;
 	overflow-x: hidden;
-	border: 1px dotted red;
+	/* border: 1px dotted red; */
 }
 
 .home-container {
@@ -12,33 +12,33 @@
 	overflow-y: auto;
 	height: 100vh;
 	width: 100%;
-	border: 1px dotted blue;
+	/* border: 1px dotted blue; */
 	position: relative;
 }
 
 .home-media-container {
 	position: relative;
-	border: 1px dotted green;
+	/* border: 1px dotted green; */
+	height: fit-content;
 
 }
 
 .home-media {
 	width: 95%;
 	max-width: 100%;
-	border: 1px dotted yellow;
-	display: inline-block;
+	/* border: 1px dotted yellow; */
 }
 
-
-.home-media-client {
+.home-media-label {
 	position: -webkit-sticky; 
 	position: sticky;
 	color: white;
 	inset-block: 50% 50px;
 	padding-bottom: 30px;
-	display: inline-block;
-	border: 1px dotted purple;
+	/* border: 1px dotted purple; */
+	height: 50%;
 }
+
 
 @media screen and (max-width: 900px) {
 	.home-parent {

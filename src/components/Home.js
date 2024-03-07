@@ -27,7 +27,7 @@ export default function Home () {
 			return (
 				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
 					<div className='home-media-container'>
-						<div className='home-media-client'>
+						<div className='home-media-label'>
 							{nextItem.client}
 						</div>
 						<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
@@ -40,7 +40,7 @@ export default function Home () {
 			return (
 				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
 					<div className='home-media-container'>
-						<div className='home-media-client'>
+						<div className='home-media-label'>
 							{nextItem.client}
 						</div>
 						<img src={nextItem.url} alt={nextItem.alt} className='home-media' onLoad={cb}/>

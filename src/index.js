@@ -148,8 +148,9 @@ const router = createBrowserRouter([
 								'service3',
 								'service4',
 							],
-							title: "Project title",
-							description: "Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah",
+							title: 'Project title',
+							client: 'company name',
+							description: 'Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah',
 							content: [
 								{ url: '/DSCF6975.MOV', alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'video'},
 								{ url: "https://picsum.photos/3200/800", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},

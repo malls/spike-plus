@@ -11,7 +11,7 @@ function WorkFooter () {
 	return (
 		<footer className='work-footer'>
 			<div className='footer-row'>
-				<Link to={'/work/' + (+data.id + 1)}>Next</Link>
+				<Link to={'/work/' + (+data.id + 1)}> > Next</Link>
 				<div>
 					{ data.title }
 				</div>
