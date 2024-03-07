@@ -1,3 +1,10 @@
+
+.contact-container {
+	width: 100%;
+	overflow-x: hidden;
+	height: 100%;
+}
+
 p {
 	margin-top: 0px;
 }
@@ -62,6 +69,16 @@ p {
 	}
 	.info-spacer {
 		display: none;
+	}
+
+	.info-text {
+		/* padding: 28px; */
+		margin-left: 28px;
+		padding-bottom: 28px;
+	}
+
+	.info-column {
+		font-size: 20px;
 	}
 }
 
