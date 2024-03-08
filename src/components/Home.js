@@ -13,14 +13,14 @@ export default function Home () {
 	const templateNext = useCallback(() => {
 		if (!data[index]) return;
 		setIndex(index + 1);
-		setMedia(prevMedia => [...prevMedia, templateData(data[index]), templateNext]);
+		setMedia(prevMedia => [...prevMedia, templateData(data[index])]);
 	}, [data, index]);
 
 	useEffect(() => {
 		templateNext();
 	}, [templateNext]);
 
-	function templateData(nextItem, cb) {
+	function templateData(nextItem) {
 		if (!nextItem) return;
 
 		if (nextItem.mediaType === 'video') {
@@ -30,7 +30,7 @@ export default function Home () {
 						<div className='home-media-label'>
 							{nextItem.client}
 						</div>
-						<video autoPlay loop muted playsInline className="home-media" onLoadedData={cb}>
+						<video autoPlay loop muted playsInline className="home-media">
 								<source src={nextItem.url}/>
 						</video>
 					</div>
@@ -43,7 +43,7 @@ export default function Home () {
 						<div className='home-media-label'>
 							{nextItem.client}
 						</div>
-						<img src={nextItem.url} alt={nextItem.alt} className='home-media' onLoad={cb}/>
+						<img src={nextItem.url} alt={nextItem.alt} className='home-media'/>
 					</div>
 				</Link>
 			);

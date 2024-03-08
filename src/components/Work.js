@@ -20,7 +20,7 @@ export default function Work () {
 				</div>
 			</div>
 			<div className="work-work-container">
-				{data.content.slice(1).map((image) => <Hero heroData={image} key={image.url}></Hero>)}
+				{data.content.slice(1).map((media) => <Hero heroData={media} key={media.url}></Hero>)}
 			</div>
 			<WorkFooter></WorkFooter>
 		</div>
