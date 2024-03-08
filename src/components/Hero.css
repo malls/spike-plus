@@ -1,7 +1,5 @@
 .hero-container {
-	background-size: cover;
 	width: 100%;
-	color: white;
 	display: flex;
 }
 
