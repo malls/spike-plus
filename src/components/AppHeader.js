@@ -1,4 +1,4 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import './AppHeader.css';
 
 function styleFunction ({ isActive, isPending }) {
@@ -10,7 +10,12 @@ function styleFunction ({ isActive, isPending }) {
 
 function AppHeader () {
 
-	let {pathname} = useLocation();
+	let { pathname } = useLocation();
+	let navigate = useNavigate();
+
+	function back() {
+		navigate(-1);
+	}
 
 	function blackOrWhite () {
 		if (['/about', '/contact', '/menu'].includes(pathname)) return 'white-bg header-small';
@@ -22,6 +27,17 @@ function AppHeader () {
 	function hideOnHome() {
 		if (pathname === '/' || pathname === '/menu') return {display: 'none'};
 		return {};
+	}
+
+	function hideOnMenu() {
+		if (pathname === '/menu') return {display: 'none'};
+		return {};
+	}
+
+	function showOnMenu() {
+		if (pathname === '/menu') return {};
+		return {display: 'none'};
+	
 	}
 
 	return (
@@ -60,7 +76,7 @@ function AppHeader () {
 					</NavLink>
 				</div>
 
-				<Link to="/menu">
+				<Link to="/menu" style={hideOnMenu()}>
 					<div className="nav-menu-mobile">
 						<div className="burger-line"></div>
 						<div className="burger-line"></div>
@@ -69,7 +85,11 @@ function AppHeader () {
 					</div>
 				</Link>
 
-				{/* <div className="nav-menu-mobile-leave" onClick={() => Navigate(-1)}> XXX</div> */}
+				<div className="nav-menu-mobile-leave" onClick={back} style={showOnMenu()}>
+					<div className="x-line x-line-left"></div>
+					<div className="x-line x-line-right"></div>
+					<br/>
+				</div>
 
 
 			</nav>
