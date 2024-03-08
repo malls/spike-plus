@@ -11,7 +11,7 @@
 .footer-home {
 	/* TODO get real number */
 	max-height: 200px;
-	padding-left: 126px;
+	padding-left: 115px;
 
 	width: 100%;
 	position: fixed;
@@ -34,7 +34,7 @@
 }
 
 .footer-text {
-	padding: 10px;
+	padding: 10px 10px 10px 0px;
 }
 
 
