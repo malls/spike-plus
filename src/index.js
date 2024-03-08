@@ -31,61 +31,47 @@ const router = createBrowserRouter([
 					return {
 						data: [
 							{
-								client: "Client Name 2",
-								id: 2,
-								title: "Title 2",
-								photographer: "Photographer Name 2",
-								mediaType: "image",
-								url: "https://picsum.photos/1600/800",
+								url: '/videos/FFM_Animation_1.5.mp4',
+								id: 0,
+								client: 'Client Name',
+								mediaType: 'video',
+	
 							},
 							{
-								client: "Client Name 4",
-								id: 4,
-								title: "Title 4",
-								photographer: "Photographer Name 4",
-								mediaType: "image",
-								url: "https://picsum.photos/2801/1800",
+								url: '/videos/RalphLauren_2SH_2.mp4',
+								id: 0,
+								client: 'Client Name',
+								mediaType: 'video',
+	
 							},
 							{
-								client: "Client Name 5",
-								id: 5,
-								title: "Title 5",
-								photographer: "Photographer Name 5",
-								mediaType: "image",
-								url: "https://picsum.photos/2990/1300",
+								url: '/videos/SpikeHibb-Portf01-02_RagBoneFW16-edit-210412-v02.mp4',
+								id: 0,
+								client: 'Client Name',
+								mediaType: 'video',
+	
 							},
 							{
-								client: "Client Name 1",
-								id: 6,
-								title: "Title 1",
-								photographer: "Photographer 1 Name",
-								mediaType: "image",
-								url: "https://picsum.photos/2700/1200",
+								url: '/videos/SpikeHibb-Portf01-NilLotaVid01-edit-210413-v04.mp4',
+								id: 0,
+								client: 'Client Name',
+								mediaType: 'video',
+	
 							},
-							// {
-							// 	client: 'Forrest',
-							// 	id: 0,
-							// 	title: "Title 0",
-							// 	photographer: "Photographer 0 Name",
-							// 	mediaType: "video",
-							// 	url: '/ella goerner meditation on the economy one.mp4'
-							// },
-							// {
-							// 	client: "Client Name 3",
-							// 	id: 3,
-							// 	title: "Title 3",
-							// 	photographer: "Photographer Name 3",
-							// 	mediaType: "video",
-							// 	url: "/DSCF6962.MOV",
-							// },
-							// {
-							// 	client: 'Forrest',
-							// 	id: 1,
-							// 	title: "Title 1",
-							// 	photographer: "Photographer 1 Name",
-							// 	mediaType: "video",
-							// 	url: '/DSCF6975.MOV'
-							// },
+							{
+								url: '/videos/TM.mp4',
+								id: 0,
+								client: 'Client Name',
+								mediaType: 'video',
+	
+							},
+							{
+								url: '/videos/Vince_HolidayVideo_Photoshop_1.mp4',
+								id: 0,
+								client: 'Client Name',
+								mediaType: 'video',
+	
+							}
 						]
 					}
 					return fetch(generateApiUrl("home"), {
@@ -149,19 +135,23 @@ const router = createBrowserRouter([
 								'service4',
 							],
 							title: 'Project title',
-							client: 'company name',
+							client: 'Vince',
 							description: 'Description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah',
 							content: [
-								{ url: '/DSCF6975.MOV', alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'video'},
-								{ url: "https://picsum.photos/3200/800", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
-								{ url: "https://picsum.photos/2700/1201", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
-								{ url: "https://picsum.photos/2700/1202", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
-								{ url: "https://picsum.photos/2700/1203", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
-								{ url: "/ella goerner meditation on the economy one.mp4", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'video'},
-								{ url: "https://picsum.photos/2700/1205", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
-								{ url: "https://picsum.photos/2700/1207", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
-								{ url: "https://picsum.photos/2700/1209", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
-								{ url: "https://picsum.photos/2700/1213", alt: '', title: 'Media Title', client: 'Cleint Name', photographer: 'Photographer Name', type: 'image'},
+
+								{ url: '/vince/VinceHoliday_Video_2.mp4', alt: '', title: 'title', photographer: '', type: 'video'},
+								{ url: '/vince/Holiday2024_1.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_2.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_3.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_4.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_5.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_6.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_7.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_8.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/Holiday2024_9.1.jpg', alt: '', title: 'title', photographer: '', type: 'image'},
+								{ url: '/vince/df67fb09-a602-4dd1-966f-e27623f76aab (1).mp4' , alt: '', title: 'title', photographer: '', type: 'video'},
+								{ url: '/vince/f2fbb8b4-940c-4b6c-9b7e-47cec6094ce4 (1).mp4', alt: '', title: 'title', photographer: '', type: 'video'},
+
 							]
 						}
 					}

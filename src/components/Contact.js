@@ -26,7 +26,7 @@ export default function Contact () {
 
 				<div className='info-spacer'></div>
 			</div>
-			<SiteFooter></SiteFooter>
+			<SiteFooter background={'white'}></SiteFooter>
 		</div>
 
 	)
