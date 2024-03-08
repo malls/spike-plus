@@ -11,9 +11,10 @@ export default function Work () {
 		<div className="work-container">
 			<Hero heroData={data.content[0]}></Hero>
 			<div className="work-text-container">
-				<div>{data.client}</div>
-				<div>{data.description}</div>
-				<div>
+				<div className='work-client-tag'>{data.client}</div>
+				<div className='work-description'>{data.description}</div>
+				<div className='mobile-only'></div>
+				<div className='work-services'>
 					Services
 					<br/>
 					{data.services.map((service) => <div key={service}>{service}</div>)}

@@ -14,7 +14,6 @@
 	padding-left: 115px;
 
 	width: 100%;
-	position: fixed;
 	bottom: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;

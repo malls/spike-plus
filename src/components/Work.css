@@ -12,19 +12,48 @@
 	border-bottom: 1px solid black;
 	padding-bottom: 30px;
 	border-top: 29px solid black;
-	padding-top: 30px;
 	margin-left: 30px;
+	padding-top: 30px;
+
 }
 
 .work-work-container .hero-container {
 	padding-top: 30px;
 }
 
+.mobile-only {
+	display: none;
+}
 
-@media screen and (min-width: 600px){
+
+@media screen and (max-width: 600px){
 	.work-text-container {
-		margin-left: 100px;
-		grid-template-columns: 1fr 3fr 1fr;
+		grid-template-columns: 1fr 5fr;
+		border-top: 0px;
+		padding-top: 0px;
+		border-bottom: 0;
 
+
+	}
+
+	.work-description {
+		border-top: 29px solid black;
+		padding-top: 30px;
+		border-bottom: 1px solid black;
+		padding-bottom: 20px;
+
+	}
+
+	.work-client-tag {
+		padding-top: 59px;
+	}
+
+	.mobile-only {
+		display: block;
+	}
+
+	.work-services {
+		border-bottom: 1px solid black;
+		padding-bottom: 20px;
 	}
 }

@@ -3,7 +3,7 @@ import SiteFooter from './SiteFooter';
 
 export default function Contact () { 
 	return (
-		<div className='info'>
+		<div className='info contact'>
 				<div className='info-label'>Contact</div>
 				<div className="info-text">
 					<a href="mailto:Info@spikeplus.studio">Info@spikeplus.studio </a>

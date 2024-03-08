@@ -2,7 +2,7 @@ import './About.css';
 
 export default function About () { 
 	return (
-		<div className="info">
+		<div className="info about">
 			<div className='info-label'>Spike Plus Studio</div>
 			<div className="info-text">
 				<p>
