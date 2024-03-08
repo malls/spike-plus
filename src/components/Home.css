@@ -3,21 +3,19 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	position: relative;
-	width: 100vw;
 	padding-top: 47px;
+	height: calc(100vh - 275px);
 }
 
 .home-container {
 	margin-left: 126px;
-	/* margin-right: 200px; */
 	padding-right: 200px;
 	background-color: black;
 	overflow-x: hidden;
 	overflow-y: auto;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: relative;
-	width: 100vw;
 }
 
 .home-media-container {
