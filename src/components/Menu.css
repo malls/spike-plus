@@ -1,5 +1,11 @@
-.menu {
-	display: none;
+.menu-main > a {
+	color: black;
+	margin-left: 28px;
+	font-size: 20px;
+}
+
+.menu-header {
+	padding: 28px;
 }
 
 @media screen and (max-width: 600px) {
@@ -13,11 +19,5 @@
 		height: 100vh;
 		background-color: white;
 		color: black;
-
-	}
-
-	.menu-top {
-		margin-left: 10px;
-		border-bottom: 1px solid black;
 	}
 }

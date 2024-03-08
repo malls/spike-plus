@@ -89,7 +89,6 @@ header > nav {
 
 	.menu-top {
 		margin-left: 10px;
-		/* border-bottom: 1px solid black; */
 	}
 
 	.nav-menu {
@@ -102,8 +101,8 @@ header > nav {
 	}
 
 	.burger-line {
-		width: 21px;
-		height: 2px;
-		margin: 7px 0;
+		width: 20px;
+		height: 1px;
+		margin: 8px 0;
 	}
 }

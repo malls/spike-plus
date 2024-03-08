@@ -81,6 +81,9 @@ export default function About () {
 					Influencer management
 					<br/>
 					<br/>
+					<br/>
+					<br/>
+					<br/>
 				</div>
 
 

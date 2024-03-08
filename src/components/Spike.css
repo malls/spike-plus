@@ -24,9 +24,9 @@
 
 @media screen and (max-width: 600px) {
 	.spike {
-		font-size: 75px;
+		font-size:60px;
 		width: 350px;
-		top: -100px;
+		top: -110px;
 		left: 10px
 	}
 }

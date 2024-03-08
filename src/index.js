@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Work from './components/Work';
 import Home from './components/Home';
+import Menu from './components/Menu';
 import reportWebVitals from './reportWebVitals';
 import {
 	createBrowserRouter,
@@ -94,26 +95,30 @@ const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
-				path: "about",
+				path: 'menu',
+				element: <Menu />,
+			},
+			{
+				path: 'about',
 				element: <About />,
 				loader: async () => {
 					window.scrollTo(0, 0);
 
 					return { data: [] }
-					return fetch(generateApiUrl("about", {
+					return fetch(generateApiUrl('about', {
 						method: 'POST',
 
 					})).then((res) => res.json());
 				},
 			},
 			{
-				path: "contact",
+				path: 'contact',
 				element: <Contact />,
 				loader: async () => {
 					window.scrollTo(0, 0);
 
 					return { data: [] }
-					return fetch(generateApiUrl("contact"), {
+					return fetch(generateApiUrl('contact'), {
 						method: 'POST',
 
 					}).then((res) => res.json());

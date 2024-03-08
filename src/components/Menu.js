@@ -1,26 +1,28 @@
 import { NavLink } from 'react-router-dom';
+import './Menu.css';
 
 export default function Menu() {
 
 	let menuOpen = false;
 
-	return  <div className='menu'>
-			<section className='menu-top'>
-				<div className='menu-toggle-button menu-toggle-button-{ menuOpen ? `on` : `off` }'></div>
-			</section>
-			<nav className='menu-main menu-toggled-{ menuOpen ? `on` : `off` }'>
+	return  <nav className='menu-main'>
+				<div className='menu-header'>
+					Spike +
+				</div>
 				<NavLink
 					to="/">
 					Work
 				</NavLink>
+				<br/>
 				<NavLink
 					to="/about">
 					About
 				</NavLink>
+				<br/>
+
 				<NavLink
 					to="/contact">
 					Contact
 				</NavLink>
 			</nav>
-	</div>
 }

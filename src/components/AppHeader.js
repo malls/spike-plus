@@ -13,14 +13,14 @@ function AppHeader () {
 	let {pathname} = useLocation();
 
 	function blackOrWhite () {
-		if (['/about', '/contact'].includes(pathname)) return 'white-bg header-small';
+		if (['/about', '/contact', '/menu'].includes(pathname)) return 'white-bg header-small';
 		if (pathname === '/') return 'black-bg header-big';
 
 		return 'black-bg header-small';
 	}
 
 	function hideOnHome() {
-		if (pathname === '/') return {display: 'none'};
+		if (pathname === '/' || pathname === '/menu') return {display: 'none'};
 		return {};
 	}
 
@@ -68,6 +68,9 @@ function AppHeader () {
 						<br/>
 					</div>
 				</Link>
+
+				{/* <div className="nav-menu-mobile-leave" onClick={() => Navigate(-1)}> XXX</div> */}
+
 
 			</nav>
 
