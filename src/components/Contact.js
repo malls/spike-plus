@@ -12,15 +12,13 @@ export default function Contact () {
 
 				<div className='info-label'>New business</div>
 				<div className="info-text">
-					<div className='info-column'>
-						Print & Contact
-						<br/>
-						Dean Snyder
-						<br/>
-						<a href="mailto:Info@printandcontact.com">Info@printandcontact.com</a>
-						<br/>
-						<a href="tel:+1212-436-8845">212 436 8845</a>
-					</div>
+					Print & Contact
+					<br/>
+					Dean Snyder
+					<br/>
+					<a href="mailto:Info@printandcontact.com">Info@printandcontact.com</a>
+					<br/>
+					<a href="tel:+1212-436-8845">212 436 8845</a>
 				</div>
 				<div className='info-spacer'></div>
 				<div></div>
