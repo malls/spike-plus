@@ -8,6 +8,7 @@
 
 .home-container {
 	margin-left: 126px;
+	margin-right: 20px;
 	background-color: black;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -30,6 +31,7 @@
 	max-width: 100%;
 	/* border: 1px dotted yellow; */
 	margin-top: -352px;
+	padding-right: 20px;
 }
 
 .home-media-label {
@@ -44,16 +46,34 @@
 	/* border: 1px dotted purple; */
 }
 
+@media screen and (max-width: 600px){
+	.home-media-label {
+		top: default;
+		position: default;
+		bottom: -20px;
+		padding-top: 275px;
+	}
+
+	.home-media {
+		margin-bottom: 60px;
+	}
+
+	.home-container {
+		/* padding-left: 20px; */
+		margin-left: 20px;
+		margin-right: 20px;
+		max-width: 100vw;
+	}
+
+}
 
 @media screen and (max-width: 900px) {
 	.home-parent {
 		flex-direction: column;
 	}
 	.home-container {
-		margin-left: 0;
+		/* margin-left: 0; */
 		border-bottom: none;
 	}
-	.home-media {
-		width: 100%;
-	}
 }
+
