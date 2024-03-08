@@ -14,6 +14,7 @@ function SiteFooter ({background}) {
 				</div>
 				<div className='footer-text'>© 2024 Spike Plus Studio</div>
 			</div>
+
 			<div className='footer-column'>
 				<a href='https://www.instagram.com/spikeplus.studio/' target='_blank' rel='noreferrer'><div className='footer-text'>Instagram</div></a>
 				<a href='https://www.linkedin.com/spikeplus.studio/' target='_blank' rel='noreferrer'><div className='footer-text'>LinkedIn</div></a>

@@ -12,6 +12,7 @@
 .footer-home {
 	/* TODO get real number */
 	max-height: 200px;
+	padding-left: 126px;
 
 	width: 100%;
 	position: fixed;
@@ -30,9 +31,9 @@
 
 
 
+
 .footer-column {
 	height: 100%;
-	padding-left: 126px;
 	padding-top: 30px;
 }
 
@@ -45,10 +46,6 @@
 
 	.footer-home {
 		grid-template-columns: 3fr 2fr;
-
-	}
-
-	.footer-column {
 		padding-left: 28px;
 	}
 
@@ -58,4 +55,10 @@
 	
 }
 
+@media screen and (min-width: 1000px) {
 
+	.footer-home {
+		grid-template-columns: 2fr 1fr;
+	}
+
+}
