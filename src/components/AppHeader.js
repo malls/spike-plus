@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import './AppHeader.css';
 
 function styleFunction ({ isActive, isPending }) {
@@ -26,40 +26,52 @@ function AppHeader () {
 
 	return (
 		<header className={blackOrWhite()}>
+			<nav>
+				<NavLink
+					to="/"
+					className={'nav-home'}>
+						<span style={hideOnHome()}>Spike Plus</span>
+				</NavLink>
 
-			<NavLink
-				to="/"
-				style={hideOnHome()}
-				className={'nav-home'}>
-					Spike Plus
-			</NavLink>
+				<div className="nav-menu">
+					<NavLink
+						style={styleFunction}
+						className={( isActive, isPending) => {
+							return isActive ? "active" : isPending ? "pending" : ""
+						}}
+						to="/">
+						Work
+					</NavLink>
+					<NavLink
+						style={styleFunction}
+						className={( isActive, isPending) => {
+							return isActive ? "active" : isPending ? "pending" : ""
+						}}
+						to="/about">
+						About
+					</NavLink>
+					<NavLink
+						style={styleFunction}
+						className={( isActive, isPending) => {
+							return isActive ? "active" : isPending ? "pending" : ""
+						}}
+						to="/contact">
+						Contact
+					</NavLink>
+				</div>
 
-			<div className="nav-menu">
-				<NavLink
-					style={styleFunction}
-					className={( isActive, isPending) => {
-						return isActive ? "active" : isPending ? "pending" : ""
-					}}
-					to="/">
-					Work
-				</NavLink>
-				<NavLink
-					style={styleFunction}
-					className={( isActive, isPending) => {
-						return isActive ? "active" : isPending ? "pending" : ""
-					}}
-					to="/about">
-					About
-				</NavLink>
-				<NavLink
-					style={styleFunction}
-					className={( isActive, isPending) => {
-						return isActive ? "active" : isPending ? "pending" : ""
-					}}
-					to="/contact">
-					Contact
-				</NavLink>
-			</div>
+				<Link to="/menu">
+					<div className="nav-menu-mobile">
+						<div className="burger-line"></div>
+						<div className="burger-line"></div>
+						<div className="burger-line"></div>
+						<br/>
+					</div>
+				</Link>
+
+			</nav>
+
+
 		</header>
 	)
 }

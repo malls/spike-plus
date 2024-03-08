@@ -1,24 +1,3 @@
-@media screen and (max-width: 600px) {
-	.menu {
-		display: contents;
-		z-index: 100;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 100vw;
-		height: 100vh;
-		background-color: white;
-		color: black;
-
-	}
-
-	.menu-top {
-		margin-left: 10px;
-		border-bottom: 1px solid black;
-	}
-}
-
-
 header {
 	display: flex;
 	font-style: normal;
@@ -30,15 +9,21 @@ header {
 	width: 100%;
 }
 
-.nav-home {
+header > nav {
+	display: flex;
 	margin-left: 28px;
-	width: 200px;
 	border-bottom: 1px solid black;
+	justify-content: space-between;
+	width: 100%;
+
+}
+
+.nav-home {
+	min-width: 200px;
 	padding-top: 30px;
 }
 
 .nav-menu {
-	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: flex-end;
 	width: 100%;
@@ -56,6 +41,14 @@ header {
 	border-bottom: none;
 }
 
+.black-bg .burger-line {
+	background-color: white;
+}
+
+.white-bg .burger-line {
+	background-color: black;
+}
+
 .white-bg a {
 	color: black;
 }
@@ -70,4 +63,48 @@ header {
 
 .header-small {
 	height: 79px;
+}
+
+.nav-menu-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.menu {
+		display: contents;
+		z-index: 100;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: white;
+		color: black;
+
+	}
+
+	.nav-home {
+		border: none;
+	}
+
+	.menu-top {
+		margin-left: 10px;
+		/* border-bottom: 1px solid black; */
+	}
+
+	.nav-menu {
+		display: none;
+	}
+
+	.nav-menu-mobile {
+		display: block;
+		padding: 20px;
+		margin-right: 50px;
+	}
+
+	.burger-line {
+		width: 21px;
+		height: 2px;
+		margin: 7px 0;
+	}
 }
