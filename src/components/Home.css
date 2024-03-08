@@ -2,6 +2,7 @@
 	background-color: black;
 	overflow-y: auto;
 	overflow-x: hidden;
+	position: relative;
 	/* border: 1px dotted red; */
 }
 
@@ -19,25 +20,28 @@
 
 .home-media-container {
 	position: relative;
-	/* border: 1px dotted green; */
+	border: 1px dotted green;
 	height: fit-content;
-
+	/* height: 800px; */
 }
 
 .home-media {
 	width: 95%;
 	max-width: 100%;
 	/* border: 1px dotted yellow; */
+	margin-top: -82px;
 }
 
 .home-media-label {
 	position: -webkit-sticky; 
 	position: sticky;
 	color: white;
-	inset-block: 50% 50px;
+	top: 50%;
+	bottom: 50px;
+	padding-left: 20px;
 	padding-bottom: 30px;
+	padding-top: 30px;
 	/* border: 1px dotted purple; */
-	height: 50%;
 }
 
 
