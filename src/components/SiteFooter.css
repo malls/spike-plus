@@ -11,7 +11,7 @@
 
 .footer-home {
 	/* TODO get real number */
-	max-height: 100px;
+	max-height: 200px;
 
 	width: 100%;
 	position: fixed;
@@ -31,8 +31,13 @@
 
 
 .footer-column {
-	padding: 5px;
 	height: 100%;
+	padding-left: 126px;
+	padding-top: 30px;
+}
+
+.footer-text {
+	padding: 10px;
 }
 
 
@@ -48,10 +53,12 @@
 	}
 
 	.footer-column {
-
+		padding-left: 0;
 	}
 
-
+	.hide-mobile {
+		display: none;
+	}
 	
 }
 

@@ -20,7 +20,7 @@
 
 .home-media-container {
 	position: relative;
-	border: 1px dotted green;
+	/* border: 1px dotted green; */
 	height: fit-content;
 	/* height: 800px; */
 }
@@ -29,18 +29,18 @@
 	width: 95%;
 	max-width: 100%;
 	/* border: 1px dotted yellow; */
-	margin-top: -82px;
+	margin-top: -352px;
 }
 
 .home-media-label {
 	position: -webkit-sticky; 
 	position: sticky;
 	color: white;
-	top: 50%;
+	top: 45%;
 	bottom: 50px;
 	padding-left: 20px;
 	padding-bottom: 30px;
-	padding-top: 30px;
+	padding-top: 300px;
 	/* border: 1px dotted purple; */
 }
 
