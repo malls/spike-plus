@@ -42,18 +42,14 @@
 
 
 @media screen and (max-width: 600px) {
-	.footer-home {
-	}
-	.footer-row {
-		grid-template-columns: 1fr 0fr 1fr;
-	}
 
-	.footer-email, .footer-spacer {
-		display: none;
+	.footer-home {
+		grid-template-columns: 3fr 2fr;
+
 	}
 
 	.footer-column {
-		padding-left: 0;
+		padding-left: 28px;
 	}
 
 	.hide-mobile {

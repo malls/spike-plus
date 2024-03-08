@@ -3,8 +3,7 @@ import SiteFooter from './SiteFooter';
 
 export default function Contact () { 
 	return (
-		<div className='contact-container'>
-			<div className="info">
+		<div className='info'>
 				<div className='info-label'>Contact</div>
 				<div className="info-text">
 					<a href="mailto:Info@spikeplus.studio">Info@spikeplus.studio </a>
@@ -23,9 +22,14 @@ export default function Contact () {
 						<a href="tel:+1212-436-8845">212 436 8845</a>
 					</div>
 				</div>
-
 				<div className='info-spacer'></div>
-			</div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+
 			<SiteFooter background={'white'}></SiteFooter>
 		</div>
 

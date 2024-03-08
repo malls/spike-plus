@@ -3,6 +3,7 @@
 	width: 100%;
 	overflow-x: hidden;
 	height: 100%;
+	background-color: white;
 }
 
 p {
@@ -62,7 +63,10 @@ p {
 @media screen and (max-width: 600px) {
 	.info {
 		grid-template-columns: 1fr;
-
+	}
+	.info-label {
+		padding-top: 10px;
+		padding-bottom: 0px;
 	}
 	.info-column-container {
 		grid-template-columns: 1fr;
@@ -72,13 +76,16 @@ p {
 	}
 
 	.info-text {
-		/* padding: 28px; */
 		margin-left: 28px;
 		padding-bottom: 28px;
 	}
 
 	.info-column {
 		font-size: 20px;
+	}
+
+	.info-text {
+		padding: 0px;
 	}
 }
 
