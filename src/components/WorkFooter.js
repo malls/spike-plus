@@ -6,15 +6,11 @@ import './WorkFooter.css'
 function WorkFooter () {
 	const { data } = useLoaderData();
 
-	console.log(data);
-
 	return (
 		<footer className='work-footer'>
-			<div className='footer-row'>
-				<Link to={'/work/' + (+data.id + 1)}> &gt; Next</Link>
-				<div>
-					{ data.title }
-				</div>
+			<Link to={'/work/' + (+data.id + 1)}> &gt; Next Project</Link>
+			<div>
+				{ data.title }
 			</div>
 		</footer>
 

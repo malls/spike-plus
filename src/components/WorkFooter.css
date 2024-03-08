@@ -6,3 +6,10 @@
 	align-items: center;
 	padding-left: 30px;
 }
+
+.work-footer > a {
+	color: white;
+	margin-left: 28px;
+	font-size: 14px;
+	padding-right: 100px;
+}
