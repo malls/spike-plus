@@ -98,6 +98,10 @@ p {
 	.info-text {
 		padding: 0px;
 	}
+
+	.info-label {
+		padding-bottom: 0px;
+	}
 }
 
 

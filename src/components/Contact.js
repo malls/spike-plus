@@ -30,7 +30,7 @@ export default function Contact () {
 
 
 			
-			<SiteFooter background={'white'}></SiteFooter>
+			<SiteFooter hideDesktop={true} background={'white'}></SiteFooter>
 		</div>
 
 	)

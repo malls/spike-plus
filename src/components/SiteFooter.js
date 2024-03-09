@@ -1,11 +1,19 @@
 import './SiteFooter.css'
 
-function SiteFooter ({background}) {
+function SiteFooter ({background, hideDesktop}) {
 
-	let backgroundClass = `${background === 'white' ? 'footer-whitebg' : 'footer-blackbg'} footer-home`;
+
+	let footerClass = 'footer-home';
+	if (hideDesktop) footerClass += ' hide-desktop';
+
+	if (background === 'white') {
+		footerClass += ' footer-whitebg';
+	} else {
+		footerClass += ' footer-blackbg';
+	}
 	
 	return (
-		<footer className={backgroundClass}>
+		<footer className={footerClass}>
 
 			<div className='footer-column'>
 				<a href='mailto:info@spikeplus.studio'><div className='footer-text hide-mobile'>info@spikeplus.studio</div></a>
