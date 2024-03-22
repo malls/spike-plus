@@ -46,7 +46,7 @@ function AppHeader () {
 				<NavLink
 					to="/"
 					className={'nav-home'}>
-						<span style={hideOnHome()}>Spike Plus</span>
+						<span style={hideOnHome()}>Spike +</span>
 				</NavLink>
 
 				<div className="nav-menu">
