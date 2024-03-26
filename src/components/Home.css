@@ -41,6 +41,10 @@
 	padding-top: 300px;
 }
 
+.home-media-label-mobile {
+	display: none;
+}
+
 @media screen and (max-width: 600px){
 	.home-media-label {
 		display: none;
@@ -51,6 +55,7 @@
 		padding-bottom: 15px;
 		padding-left: 0px;
 		color: white;
+		display: block;
 	}
 
 	.home-media {
