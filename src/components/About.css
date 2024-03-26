@@ -68,6 +68,7 @@ p {
 	.about {
 		overflow-y: auto;
 		margin-bottom: 200px;
+		padding-right: 28px;
 	}
 
 	.info {

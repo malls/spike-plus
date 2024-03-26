@@ -2,7 +2,7 @@ import './SiteTitle.css'
 
 function SiteTitle () {
 	<div class="site-title">
-		Spike+
+		Spike +
 	</div>
 }
 
