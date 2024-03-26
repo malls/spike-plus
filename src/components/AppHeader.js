@@ -19,7 +19,7 @@ function AppHeader () {
 
 	function blackOrWhite () {
 		if (['/about', '/contact', '/menu'].includes(pathname)) return 'white-bg header-small';
-		if (pathname === '/') return 'black-bg header-big';
+		if (pathname === '/') return 'black-bg header-home';
 
 		return 'black-bg header-small';
 	}

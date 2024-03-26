@@ -57,7 +57,7 @@ header > nav {
 	color: white;
 }
 
-.header-big {
+.header-home {
 	height: 125px;
 }
 
@@ -121,7 +121,7 @@ header > nav {
 
 	.nav-menu-mobile {
 		display: block;
-		padding: 20px;
+		padding: 22px;
 	}
 
 	.burger-line {
