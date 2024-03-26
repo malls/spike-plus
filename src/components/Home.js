@@ -33,6 +33,9 @@ export default function Home () {
 						<video autoPlay loop muted playsInline className="home-media">
 								<source src={nextItem.url}/>
 						</video>
+						<div className='home-media-label-mobile'>
+							{nextItem.client}
+						</div>
 					</div>
 				</Link>
 			);
@@ -44,6 +47,9 @@ export default function Home () {
 							{nextItem.client}
 						</div>
 						<img src={nextItem.url} alt={nextItem.alt} className='home-media'/>
+						<div className='home-media-label-mobile'>
+							{nextItem.client}
+						</div>
 					</div>
 				</Link>
 			);
