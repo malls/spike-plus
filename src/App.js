@@ -1,5 +1,5 @@
 import './App.css';
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import AppHeader from './components/AppHeader.js';
 import SiteTitle from './components/SiteTitle.js';
 
@@ -11,6 +11,7 @@ function App() {
             <SiteTitle></SiteTitle>
             <main className="content">
                 <Outlet/>
+                <ScrollRestoration/>
             </main>
 
         </div>

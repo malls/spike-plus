@@ -27,7 +27,6 @@ const router = createBrowserRouter([
 			{
 				index: true,
 				loader: async () => {
-					window.scrollTo(0, 0);
 
 					return {
 						data: [
@@ -102,7 +101,6 @@ const router = createBrowserRouter([
 				path: 'about',
 				element: <About />,
 				loader: async () => {
-					window.scrollTo(0, 0);
 
 					return { data: [] }
 					return fetch(generateApiUrl('about', {
@@ -115,7 +113,6 @@ const router = createBrowserRouter([
 				path: 'contact',
 				element: <Contact />,
 				loader: async () => {
-					window.scrollTo(0, 0);
 
 					return { data: [] }
 					return fetch(generateApiUrl('contact'), {
@@ -128,8 +125,6 @@ const router = createBrowserRouter([
 				path: "work/:id",
 				element: <Work />,
 				loader: async ({params}) => {
-					window.scrollTo(0, 0);
-
 					return { 
 						data: {
 							id: params.id,

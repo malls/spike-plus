@@ -26,6 +26,7 @@ html, body {
 	padding-top: 79px;
 	display: flex;
 	flex: 1;
+	background-color: black;
 }
 
 .App {

@@ -4,7 +4,6 @@ import { useLoaderData } from 'react-router-dom';
 import './Work.css';
 
 export default function Work () {
-
 	const { data } = useLoaderData();
 
 	return (
