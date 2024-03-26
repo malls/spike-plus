@@ -11,18 +11,24 @@ export default function Menu() {
 				</div>
 				<NavLink
 					to="/">
-					Work
+					<div className='menu-item-link'>
+						Work
+					</div>
 				</NavLink>
 				<br/>
 				<NavLink
 					to="/about">
-					About
+					<div className='menu-item-link'>
+						About
+					</div>
 				</NavLink>
 				<br/>
 
 				<NavLink
 					to="/contact">
-					Contact
+					<div className='menu-item-link'>
+						Contact
+					</div>
 				</NavLink>
 			</nav>
 }
