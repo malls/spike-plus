@@ -78,7 +78,6 @@ p {
 
 	.info-column-container {
 		grid-template-columns: 1fr;
-		overflow-y: auto;
 	}
 	.info-spacer {
 		display: none;

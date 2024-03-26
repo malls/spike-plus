@@ -86,7 +86,6 @@ export default function About () {
 					<br/>
 				</div>
 
-
 			</div>
 			<div className='info-spacer'></div>
 		</div>
