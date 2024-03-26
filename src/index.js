@@ -30,6 +30,11 @@ const router = createBrowserRouter([
 
 					return {
 						data: [
+							{ 
+								url: 'https://images.pexels.com/photos/17840523/pexels-photo-17840523/free-photo-of-cgi-minimal-bathroom.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+								client: 'text',
+							},
+
 							{
 								url: '/videos/FFM_Animation_1.5.mp4',
 								id: 0,

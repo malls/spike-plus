@@ -22,6 +22,17 @@
 	z-index: 1000;
 }
 
+.spike-plus-s {
+	padding-right: .01em;
+}
+.spike-plus-k {
+	margin-left: -.035em;
+}
+.spike-plus-e {
+	margin-left: -.035em;
+	margin-right: .1em;
+}
+
 @media screen and (max-width: 600px) {
 	.spike {
 		font-size:60px;
