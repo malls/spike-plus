@@ -3,7 +3,7 @@ import './About.css';
 export default function About () { 
 	return (
 		<div className="info about">
-			<div className='info-label'>About</div>
+			<div className='info-label info-label-about'>About</div>
 			<div className="info-text">
 				<p>
 					Spike + unites creative, strategic, and technological artists from around the world to establish a one-of-a-kind design studio. A network of craftspeople who collaborate, forming a rich incubator for unique visions, projects and products to originate.
@@ -85,7 +85,6 @@ export default function About () {
 					<br/>
 					<br/>
 				</div>
-
 			</div>
 			<div className='info-spacer'></div>
 		</div>

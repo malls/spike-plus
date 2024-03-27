@@ -71,6 +71,10 @@ p {
 		padding-right: 28px;
 	}
 
+	.info-label-about {
+		margin-bottom: 13px;
+	}
+
 	.info {
 		grid-template-columns: 1fr;
 		max-height: 100vh;
