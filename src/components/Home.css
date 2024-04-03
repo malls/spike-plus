@@ -21,6 +21,7 @@
 .home-media-container {
 	position: relative;
 	height: fit-content;
+	padding-bottom: 10px;
 }
 
 .home-media {
@@ -51,7 +52,7 @@
 	}
 	
 	.home-media-label-mobile {
-		padding-top: 15px;
+		padding-top: 5px;
 		padding-bottom: 15px;
 		padding-left: 0px;
 		color: white;

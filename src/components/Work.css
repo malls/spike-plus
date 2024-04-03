@@ -11,7 +11,7 @@
 	grid-gap: 50px;
 	border-bottom: 1px solid black;
 	padding-bottom: 30px;
-	border-top: 29px solid black;
+	border-top: 19px solid black;
 	margin-left: 30px;
 	padding-top: 30px;
 	margin-bottom: 30px;
@@ -25,10 +25,9 @@
 	display: none;
 }
 
-
 @media screen and (max-width: 600px){
 	.work-text-container {
-		grid-template-columns: 1fr 5fr;
+		grid-template-columns: 1fr;
 		border-top: 0px;
 		padding-top: 0px;
 		border-bottom: 0;
@@ -37,15 +36,17 @@
 	}
 
 	.work-description {
-		border-top: 29px solid black;
+		border-top: 1px solid black;
 		padding-top: 30px;
 		border-bottom: 1px solid black;
 		padding-bottom: 20px;
+		padding-right: 28px;
 
 	}
 
 	.work-client-tag {
-		padding-top: 59px;
+		border-top: 29px solid black;
+		padding-top: 30px;
 	}
 
 	.mobile-only {
@@ -56,4 +57,9 @@
 		border-bottom: 1px solid black;
 		padding-bottom: 20px;
 	}
+
+	.work-work-container .hero-container {
+		padding-bottom: 5px;
+	}
+	
 }
