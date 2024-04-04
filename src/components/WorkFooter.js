@@ -8,9 +8,9 @@ function WorkFooter () {
 
 	return (
 		<footer className='work-footer'>
-			<Link to={'/work/' + (+data.id + 1)}> &gt; Next Project</Link>
+			<Link to={'/work/' + (+data.next.id)}> &gt; Next Project</Link>
 			<div>
-				{ data.title }
+				{ data.next.client }
 			</div>
 		</footer>
 

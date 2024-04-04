@@ -129,6 +129,10 @@ const router = createBrowserRouter([
 						data: {
 							id: params.id,
 							client: 'Ralph Lauren Polo',
+							next: {
+								client: 'Rag & Bone',
+								id: '12345'
+							},
 							projects: [
 								{
 									services: [
