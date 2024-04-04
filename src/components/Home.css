@@ -24,6 +24,7 @@
 }
 
 .home-media {
+	width: 100%;
 	max-width: 95%;
 	margin-top: -352px;
 }
