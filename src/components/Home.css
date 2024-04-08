@@ -11,8 +11,6 @@
 .home-container {
 	background-color: black;
 	overflow-x: contain;
-	overflow-y: auto;
-	height: 100%;
 	width: 100%;
 	position: relative;
 }
@@ -44,8 +42,6 @@
 .home-media-label-mobile {
 	display: none;
 }
-
-
 
 @media screen and (max-width: 900px) {
 	.home-parent {
