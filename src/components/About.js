@@ -20,7 +20,7 @@ export default function About () {
 			</div>
 			<div className='info-spacer'></div>
 			<div className='info-label'>Services</div>
-			<div className='info-text info-column-container'>
+			<div className='info-column-container'>
 				<div className='info-column'>
 					01. Branding
 					<br/>

@@ -58,6 +58,10 @@ p {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	font-size: 14px;
+	margin-left: 10px;
+	padding-top: 8px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
 }
 
 .info-column {
