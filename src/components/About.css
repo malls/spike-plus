@@ -24,11 +24,18 @@ p {
 
 .info-label {
 	padding: 28px;
-
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 19px;
+}
+
+.info-label-about {
+	padding: 28px 0px 0px 28px;
+}
+
+.info-label-services {
+	padding: 8px 0px 0px 28px;
 }
 
 .info-text {
@@ -104,6 +111,7 @@ p {
 
 	.info-column-container {
 		grid-template-columns: 1fr;
+		margin-left: 28px;
 	}
 	.info-spacer {
 		display: none;
