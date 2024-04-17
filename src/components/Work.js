@@ -30,8 +30,6 @@ export default function Work () {
 		</div>
 	});
 
-	console.log({data, sections});
-
 	return (
 		<div className="work-container">
 			{sections}
