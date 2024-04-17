@@ -31,11 +31,7 @@ const router = createBrowserRouter([
 						order: 'fields.order',
 					});
 
-					let items = entries.items.map((item, i) => {
-						return {...item, asset: entries.includes?.Asset[i]}
-					})
-
-					return { data: items };
+					return { data: entries };
 				},
 				element: <Home />,
 			},
@@ -69,7 +65,6 @@ const router = createBrowserRouter([
 						'fields.client.sys.id': params.id
 					});
 
-					console.log(entries)
 					return { data: entries };
 				},
 			},

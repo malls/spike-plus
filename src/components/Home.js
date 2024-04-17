@@ -11,9 +11,9 @@ export default function Home () {
 	let [index, setIndex] = useState(0);
 
 	const templateNext = useCallback(() => {
-		if (!data[index]) return;
+		if (!data.items[index]) return;
 		setIndex(index + 1);
-		setMedia(prevMedia => [...prevMedia, templateData(data[index])]);
+		setMedia(prevMedia => [...prevMedia, templateData(data.items[index])]);
 	}, [data, index]);
 
 	useEffect(() => {
@@ -23,7 +23,7 @@ export default function Home () {
 	function templateData(nextItem) {
 		if (!nextItem) return;
 
-		if (nextItem.asset.fields.file.contentType.startsWith('video')) {
+		if (nextItem.fields.homepageMedia.fields.file.contentType.startsWith('video')) {
 			return (
 				<Link to={`/work/${nextItem.sys.id}`} key={nextItem.sys.id}>
 					<div className='home-media-container'>
@@ -31,7 +31,7 @@ export default function Home () {
 							{nextItem.fields.name}
 						</div>
 						<video autoPlay loop muted playsInline className="home-media">
-								<source src={nextItem.asset.fields.file.url}/>
+								<source src={nextItem.fields.homepageMedia.fields.file.url}/>
 						</video>
 						<div className='home-media-label-mobile'>
 							{nextItem.fields.name}
@@ -46,7 +46,7 @@ export default function Home () {
 						<div className='home-media-label'>
 							{nextItem.fields.name}
 						</div>
-						<img src={nextItem.asset.fields.file.url} alt={nextItem.asset.fields.file.alt} className='home-media'/>
+						<img src={nextItem.fields.homepageMedia.fields.file.url} alt={nextItem.fields.homepageMedia.fields.file.url.alt} className='home-media'/>
 						<div className='home-media-label-mobile'>
 							{nextItem.fields.name}
 						</div>

@@ -9,8 +9,6 @@ export default function Work () {
 	data.next = {}
 
 	const sections = data.items.map((project, i) => {
-
-		console.log(project)
 		return <div className='work-project-container'>
 
 			<div className='work-project-title'>
@@ -18,23 +16,23 @@ export default function Work () {
 			</div>
 
 			<Hero heroData={project.fields.headerMedia}></Hero>
-				<div className="work-text-container">
-					<div className='work-client-tag'>{project.fields.client.name}</div>
-					<div className='work-description'>{project.fields.description}</div>
-					<div className='mobile-only'></div>
-					<div className='work-services'>
-						Services
-						<br/>
-						{project.fields.services.map((service) => <div key={service}>{service}</div>)}
-					</div>
+			<div className="work-text-container">
+				<div className='work-client-tag'>{project.fields.client.fields.name}</div>
+				<div className='work-description'>{project.fields.description}</div>
+				<div className='mobile-only'></div>
+				<div className='work-services'>
+					Services
+					<br/>
+					{project.fields.services.map((service) => <div key={service}>{service}</div>)}
 				</div>
-				{
-					project.fields.media ? 
-						<div className="work-work-container">
-							{project.fields.media.map((media) => <Hero heroData={media} key={media.fields.title}></Hero>)}
-						</div>
-					: ''
-				}
+			</div>
+			{
+				project.fields.media ? 
+					<div className="work-work-container">
+						{project.fields.media.map((media) => <Hero heroData={media} key={media.fields.title}></Hero>)}
+					</div>
+				: ''
+			}
 		</div>
 	});
 
