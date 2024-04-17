@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import * as contentful from 'contentful';
 import App from './App';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -12,13 +13,11 @@ import {
 	RouterProvider,
 } from "react-router-dom";
 
-
-//https://www.contentful.com/developers/docs/references/graphql/#/introduction/http-methods
-function generateApiUrl (query) {
-	return `https://graphql.contentful.com/content/v1/spaces/${process.env.REACT_APP_CONTENTFUL_SPACE_ID}/environments/master?query=${query}`;
-}
-
-
+const client = contentful.createClient({
+	space: 'sdqvju5hhgeo',
+	accessToken: '40CGSGmzpDMpdrieh85H5H6uhlOaQ4mQ9RX32i_8wNM'
+});
+  
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -74,22 +73,6 @@ const router = createBrowserRouter([
 							}
 						]
 					}
-					return fetch(generateApiUrl("home"), {
-						method: 'POST',
-						headers: {
-							contentType: 'application/json',
-						},
-						body: JSON.stringify({
-							query: `{
-							  characters {
-								results {
-								  name
-								}
-							  }
-							}`
-						  })
-
-					}).then((res) => res.json());
 				},
 				element: <Home />,
 			},
@@ -101,24 +84,15 @@ const router = createBrowserRouter([
 				path: 'about',
 				element: <About />,
 				loader: async () => {
-
-					return { data: [] }
-					return fetch(generateApiUrl('about', {
-						method: 'POST',
-
-					})).then((res) => res.json());
+					let entry = await client.getEntry('3VCJgHoezjSV4m9rOQFhtz')
+					return { data: entry.fields.copy };
 				},
 			},
 			{
 				path: 'contact',
 				element: <Contact />,
 				loader: async () => {
-
 					return { data: [] }
-					return fetch(generateApiUrl('contact'), {
-						method: 'POST',
-
-					}).then((res) => res.json());
 				},
 			},
 			{
@@ -189,9 +163,6 @@ const router = createBrowserRouter([
 
 						}
 					}
-					return fetch(generateApiUrl("work"), {
-						method: 'POST',
-					}).then((res) => res.json());
 				},
 			},
 		],
