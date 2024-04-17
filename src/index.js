@@ -26,53 +26,16 @@ const router = createBrowserRouter([
 			{
 				index: true,
 				loader: async () => {
+					let entries = await client.getEntries({
+						content_type: 'sp-clients',
+						order: 'fields.order',
+					});
 
-					return {
-						data: [
-							{
-								url: '/videos/FFM_Animation_1.5.mp4',
-								id: 0,
-								client: 'Frames For Memory',
-								mediaType: 'video',
-	
-							},
-							{
-								url: '/videos/RalphLauren_2SH_2.mp4',
-								id: 1,
-								client: 'Ralph Lauren Polo',
-								mediaType: 'video',
-	
-							},
-							{
-								url: '/videos/SpikeHibb-Portf01-02_RagBoneFW16-edit-210412-v02.mp4',
-								id: 2,
-								client: 'Rag & Bone',
-								mediaType: 'video',
-	
-							},
-							{
-								url: '/videos/SpikeHibb-Portf01-NilLotaVid01-edit-210413-v04.mp4',
-								id: 3,
-								client: 'Nili Lotan',
-								mediaType: 'video',
-	
-							},
-							{
-								url: '/videos/TM.mp4',
-								id: 4,
-								client: 'Laura Mercier',
-								mediaType: 'video',
-	
-							},
-							{
-								url: '/videos/Vince_HolidayVideo_Photoshop_1.mp4',
-								id: 5,
-								client: 'Vince',
-								mediaType: 'video',
-	
-							}
-						]
-					}
+					let items = entries.items.map((item, i) => {
+						return {...item, asset: entries.includes?.Asset[i]}
+					})
+
+					return { data: items };
 				},
 				element: <Home />,
 			},

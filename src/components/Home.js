@@ -23,32 +23,32 @@ export default function Home () {
 	function templateData(nextItem) {
 		if (!nextItem) return;
 
-		if (nextItem.mediaType === 'video') {
+		if (nextItem.asset.fields.file.contentType.startsWith('video')) {
 			return (
-				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+				<Link to={`/work/${nextItem.sys.id}`} key={nextItem.sys.id}>
 					<div className='home-media-container'>
 						<div className='home-media-label'>
-							{nextItem.client}
+							{nextItem.fields.name}
 						</div>
 						<video autoPlay loop muted playsInline className="home-media">
-								<source src={nextItem.url}/>
+								<source src={nextItem.asset.fields.file.url}/>
 						</video>
 						<div className='home-media-label-mobile'>
-							{nextItem.client}
+							{nextItem.fields.name}
 						</div>
 					</div>
 				</Link>
 			);
 		} else {
 			return (
-				<Link to={`/work/${nextItem.id}`} key={nextItem.id}>
+				<Link to={`/work/${nextItem.sys.id}`} key={nextItem.sys.id}>
 					<div className='home-media-container'>
 						<div className='home-media-label'>
-							{nextItem.client}
+							{nextItem.fields.name}
 						</div>
-						<img src={nextItem.url} alt={nextItem.alt} className='home-media'/>
+						<img src={nextItem.asset.fields.file.url} alt={nextItem.asset.fields.file.alt} className='home-media'/>
 						<div className='home-media-label-mobile'>
-							{nextItem.client}
+							{nextItem.fields.name}
 						</div>
 					</div>
 				</Link>
