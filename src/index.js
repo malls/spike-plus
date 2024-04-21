@@ -81,7 +81,6 @@ const router = createBrowserRouter([
 				path: "work/:id",
 				element: <Work />,
 				loader: async ({params}) => {
-
 					if (!nextMapping) await getClients()
 
 					let data = await client.getEntries({

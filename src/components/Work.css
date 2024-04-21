@@ -44,6 +44,10 @@
 	font-size: 14px;
 }
 
+.work-description {
+	font-size: 20px;
+}
+
 @media screen and (max-width: 900px) {
 	.work-project-title {
 		font-size: 6em;
