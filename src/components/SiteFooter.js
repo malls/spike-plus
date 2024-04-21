@@ -16,7 +16,7 @@ function SiteFooter ({background, hideDesktop}) {
 		<footer className={footerClass}>
 
 			<div className='footer-column'>
-				<a href='mailto:info@spikeplus.studio'><div className='footer-text hide-mobile'>info@spikeplus.studio</div></a>
+				<div className='footer-text hide-mobile'><a href='mailto:info@spikeplus.studio'>info@spikeplus.studio</a></div>
 				<div className='footer-text hide-mobile'>
 					<br/>
 				</div>
@@ -24,8 +24,8 @@ function SiteFooter ({background, hideDesktop}) {
 			</div>
 
 			<div className='footer-column'>
-				<a href='https://www.instagram.com/spikeplusstudio/' target='_blank' rel='noreferrer'><div className='footer-text'>Instagram</div></a>
-				<a href='https://www.linkedin.com/in/spikehibberd/' target='_blank' rel='noreferrer'><div className='footer-text'>LinkedIn</div></a>
+				<div className='footer-text'><a href='https://www.instagram.com/spikeplusstudio/' target='_blank' rel='noreferrer'>Instagram</a></div>
+				<div className='footer-text'><a href='https://www.linkedin.com/in/spikehibberd/' target='_blank' rel='noreferrer'>LinkedIn</a></div>
 				<div className='footer-text'>
 					<br/>
 				</div>
