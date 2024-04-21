@@ -17,7 +17,33 @@ const client = contentful.createClient({
 	space: 'sdqvju5hhgeo',
 	accessToken: '40CGSGmzpDMpdrieh85H5H6uhlOaQ4mQ9RX32i_8wNM'
 });
+
+
+let nextMapping = null
   
+async function getClients() {
+	let entries = await client.getEntries({
+		content_type: 'sp-clients',
+		order: 'fields.order',
+	});
+
+	nextMapping = {};
+
+	for (let i = 0; i + 1 < entries.items.length; i++) {
+		nextMapping[entries.items[i].sys.id] = {
+			id: entries.items[i + 1].sys.id,
+			name: entries.items[i + 1].fields.name
+		};
+	}
+
+	nextMapping[entries.items[entries.items.length - 1].sys.id] = {
+		id: entries.items[0].sys.id,
+		name: entries.items[0].fields.name
+	};
+
+	return entries;
+}
+
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -26,12 +52,9 @@ const router = createBrowserRouter([
 			{
 				index: true,
 				loader: async () => {
-					let entries = await client.getEntries({
-						content_type: 'sp-clients',
-						order: 'fields.order',
-					});
+					let data = await getClients()
 
-					return { data: entries };
+					return { data };
 				},
 				element: <Home />,
 			},
@@ -59,13 +82,15 @@ const router = createBrowserRouter([
 				element: <Work />,
 				loader: async ({params}) => {
 
-					let entries = await client.getEntries({
+					if (!nextMapping) await getClients()
+
+					let data = await client.getEntries({
 						content_type: 'sp-projects',
 						order: 'fields.order',
 						'fields.client.sys.id': params.id
 					});
 
-					return { data: entries };
+					return { data, next: nextMapping[params.id] };
 				},
 			},
 		],

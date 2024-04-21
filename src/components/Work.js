@@ -6,8 +6,6 @@ import './Work.css';
 export default function Work () {
 	const { data } = useLoaderData();
 
-	data.next = {}
-
 	const sections = data.items.map((project, i) => {
 		return <div className='work-project-container'>
 
