@@ -14,3 +14,15 @@
 	padding-right: 100px;
 }
 
+
+@media screen and (max-width: 600px) {
+	.work-footer {
+		padding-bottom: 20px;
+		height: 220px;
+	}
+
+	.work-footer > a {
+		margin-left: unset;
+		padding-right: 35px;
+	}
+}
