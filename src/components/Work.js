@@ -17,11 +17,13 @@ export default function Work () {
 
 			<Hero heroData={project.fields.headerMedia}></Hero>
 			<div className="work-text-container">
-				<div className='work-client-tag'>{project.fields.client.fields.name}</div>
+				<div className='work-client-tag work-smalltext'>{project.fields.client.fields.name}</div>
 				<div className='work-description'>{project.fields.description}</div>
 				<div className='mobile-only'></div>
 				<div className='work-services'>
-					Services
+					<span className='work-smalltext'>
+						Services
+					</span>
 					<br/>
 					{project.fields.services.map((service) => <div key={service}>{service}</div>)}
 				</div>

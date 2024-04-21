@@ -39,6 +39,11 @@
 	letter-spacing: -0.02em;
 }
 
+
+.work-smalltext {
+	font-size: 14px;
+}
+
 @media screen and (max-width: 900px) {
 	.work-project-title {
 		font-size: 6em;
