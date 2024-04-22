@@ -18,8 +18,7 @@ const client = contentful.createClient({
 	accessToken: '40CGSGmzpDMpdrieh85H5H6uhlOaQ4mQ9RX32i_8wNM'
 });
 
-
-let nextMapping = null
+let nextMapping = null;
   
 async function getClients() {
 	let entries = await client.getEntries({
@@ -99,7 +98,7 @@ const router = createBrowserRouter([
 ReactDOM
 	.createRoot(document.getElementById('root'))
 	.render(
-		<RouterProvider router={router} />
+		<RouterProvider router={router}></RouterProvider>
 	);
 
 reportWebVitals();

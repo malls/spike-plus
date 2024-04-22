@@ -1,13 +1,22 @@
 import Hero from './Hero';
 import WorkFooter from './WorkFooter';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useLocation } from 'react-router-dom';
+import { useLayoutEffect } from 'react';
 import './Work.css';
 
 export default function Work () {
 	const { data } = useLoaderData();
 
+	const { pathname } = useLocation();
+    useLayoutEffect(() => {
+        document.querySelector('.work-container').scrollTo({
+            top: 0,
+        });
+     }, [pathname])
+
+
 	const sections = data.items.map((project, i) => {
-		return <div className='work-project-container'>
+		return <div className='work-project-container' key={project.fields.title}>
 
 			<div className='work-project-title'>
 				{project.fields.title}

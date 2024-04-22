@@ -13,7 +13,6 @@ function WorkFooter () {
 				{ next.name }
 			</div>
 		</footer>
-
 	)
 }
 
