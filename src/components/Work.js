@@ -21,7 +21,7 @@ export default function Work () {
 		return <div className='work-project-container' key={title}>
 
 			<div className='work-project-title'>
-				{title.map(t => <div key={t}>{t}</div>)}
+				{title.map(t => <div className='work-title-part' key={t}>{t}</div>)}
 			</div>
 
 			<Hero heroData={project.fields.headerMedia}></Hero>
