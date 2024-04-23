@@ -16,8 +16,7 @@ export default function Work () {
 
 
 	const sections = data.items.map((project, i) => {
-		let title = project.fields.title?.content[0]?.value || project.fields.title_old;
-
+		let title = project.fields.title?.content[0]?.content[0].value || project.fields.title_old;
 		return <div className='work-project-container' key={title}>
 
 			<div className='work-project-title'>
