@@ -4,6 +4,8 @@ import { useLoaderData } from 'react-router-dom';
 
 export default function About () { 
 	const { data } = useLoaderData();
+
+
 	return (
 		<div className="info about">
 			<div className='info-label info-label-about'>About</div>
@@ -43,19 +45,19 @@ export default function About () {
 				<div className='info-column'>
 					02. Technology
 					<br/>
-					Games design and production
+					E-commerce
+					<br/>
+					Games Design and Production
 					<br/>
 					CGI
 					<br/>
 					Web3 & Virtual Commerce
 					<br/>
-					Web and app design
+					Web and App Design
 					<br/>
-					UX and UI design
+					UX and UI Design
 					<br/>
 					Service & Experience Design
-					<br/>
-					e-commerce
 					<br/>
 					<br/>
 				</div>
@@ -64,15 +66,15 @@ export default function About () {
 					<br/>
 					Project Production
 					<br/>
-					Rights and usage
+					Rights and Usage
 					<br/>
 					Casting
 					<br/>
-					Talent and Celebrity negotiations
+					Talent and Celebrity Negotiations
 					<br/>
-					Brand collaborations
+					Brand Collaborations
 					<br/>
-					Influencer management
+					Influencer Management
 					<br/>
 					<br/>
 					<br/>
