@@ -1,17 +1,14 @@
 import './SiteFooter.css'
 
 function SiteFooter ({background, hideDesktop}) {
-
-
 	let footerClass = 'footer-home';
 	if (hideDesktop) footerClass += ' hide-desktop';
-
 	if (background === 'white') {
 		footerClass += ' footer-whitebg';
 	} else {
 		footerClass += ' footer-blackbg';
 	}
-	
+	const year = new Date().getFullYear();
 	return (
 		<footer className={footerClass}>
 
@@ -20,7 +17,7 @@ function SiteFooter ({background, hideDesktop}) {
 				<div className='footer-text hide-mobile'>
 					<br/>
 				</div>
-				<div className='footer-text'>© 2025 Spike Plus Studio</div>
+				<div className='footer-text'>© {year} Spike Plus Studio</div>
 			</div>
 
 			<div className='footer-column'>
