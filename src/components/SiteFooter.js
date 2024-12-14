@@ -20,7 +20,7 @@ function SiteFooter ({background, hideDesktop}) {
 				<div className='footer-text hide-mobile'>
 					<br/>
 				</div>
-				<div className='footer-text'>© 2024 Spike Plus Studio</div>
+				<div className='footer-text'>© 2025 Spike Plus Studio</div>
 			</div>
 
 			<div className='footer-column'>
