@@ -1,6 +1,6 @@
 import './SiteFooter.css'
 
-function SiteFooter ({background, hideDesktop}) {
+function SiteFooter({ background, hideDesktop }) {
 	let footerClass = 'footer-home';
 	if (hideDesktop) footerClass += ' hide-desktop';
 	if (background === 'white') {
@@ -15,7 +15,7 @@ function SiteFooter ({background, hideDesktop}) {
 			<div className='footer-column'>
 				<div className='footer-text hide-mobile'><a href='mailto:info@spikeplus.studio'>info@spikeplus.studio</a></div>
 				<div className='footer-text hide-mobile'>
-					<br/>
+					<br />
 				</div>
 				<div className='footer-text'>© {year} Spike Plus Studio</div>
 			</div>
@@ -24,7 +24,7 @@ function SiteFooter ({background, hideDesktop}) {
 				<div className='footer-text'><a href='https://www.instagram.com/spikeplusstudio/' target='_blank' rel='noreferrer'>Instagram</a></div>
 				<div className='footer-text'><a href='https://www.linkedin.com/in/spikehibberd/' target='_blank' rel='noreferrer'>LinkedIn</a></div>
 				<div className='footer-text'>
-					<br/>
+					<br />
 				</div>
 			</div>
 		</footer>
